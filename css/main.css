@@ -1110,6 +1110,7 @@ pre code {
   color: var(--brand-color);
   display: inline-block;
   padding: 2px 1px;
+  margin-right: 10px;
 }
 .brand:hover {
   color: var(--brand-hover-color);
@@ -1256,7 +1257,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff0;
+  background: #a8ffff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2413,6 +2414,20 @@ hr {
 @media (max-width: 767px) {
   .footer-inner {
     text-align: center;
+  }
+}
+.column {
+  background: var(--content-bg-color);
+}
+header.header {
+  align-items: center;
+  display: flex;
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  header.header {
+    display: block;
+    padding: 10px 0;
   }
 }
 .site-meta {
