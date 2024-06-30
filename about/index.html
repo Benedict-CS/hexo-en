@@ -24,12 +24,12 @@
 <script class="next-config" data-name="main" type="application/json">{"hostname":"benedict-cs.github.io","root":"/hexo/","images":"/hexo/images","scheme":"Mist","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":260,"width_dual_column":200,"display":"hide","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/hexo/js/config.js"></script>
 <script src="/hexo/js/toggle-dark-mode.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
-    <meta name="description" content=".post-title {        display: none;      }      .profile-container {        text-align: center;      }      .profile-name {        display: inline-block;        margin-right: 10px;      }">
+    <meta name="description" content=".post-title {             display: none;         }         .profile-container {             text-align: center;         }         .profile-name {             display: inline-block;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="https://benedict-cs.github.io/hexo/about/index.html">
 <meta property="og:site_name" content="Benedict">
-<meta property="og:description" content=".post-title {        display: none;      }      .profile-container {        text-align: center;      }      .profile-name {        display: inline-block;        margin-right: 10px;      }">
+<meta property="og:description" content=".post-title {             display: none;         }         .profile-container {             text-align: center;         }         .profile-name {             display: inline-block;">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://benedict-cs.github.io/hexo/images/me.jpg">
 <meta property="og:image" content="https://benedict-cs.github.io/hexo/images/logo/nycu_logo.png">
@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://benedict-cs.github.io/hexo/images/logo/ntut_logo.png">
 <meta property="og:image" content="https://benedict-cs.github.io/hexo/images/logo/must_logo.png">
 <meta property="article:published_time" content="2020-12-31T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-06-30T09:58:56.695Z">
+<meta property="article:modified_time" content="2024-06-30T15:26:45.387Z">
 <meta property="article:author" content="Benedict">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://benedict-cs.github.io/hexo/images/me.jpg">
@@ -212,232 +212,496 @@
       
       <div class="post-body">
           <head>
-   <style>
-     .post-title {
-       display: none;
-     }
-     .profile-container {
-       text-align: center;
-     }
-     .profile-name {
-       display: inline-block;
-       margin-right: 10px;
-     }
-     .profile-link {
-       border-bottom: 1px solid gray;
-       padding-bottom: 1.5px;
-       font-size: 12px;
-     }
-     .timeline {
-       position: relative;
-       margin: 20px 0;
-       padding: 0;
-     }
-     .timeline:before {
-       content: '';
-       position: absolute;
-       top: 0;
-       bottom: 0;
-       left: 30px;
-       width: 4px; /* Make the line thicker */
-       background: #f5f5f5;
-       z-index: 0;
-       margin-top: 25px;
-     }
-     .timeline-entry {
-       position: relative;
-       margin: 20px 0;
-       padding-left: 70px;
-     }
-     .timeline-entry:before {
-       content: '';
-       position: absolute;
-       top: 50%;
-       left: 29px; /* Adjust position to center the dot on the line */
-       width: 6px; /* Make the dot larger */
-       height: 6px; /* Make the dot larger */
-       background: #bbb;
-       border-radius: 50%;
-       z-index: 1; /* Ensure dots are above the line */
-       transition: background 0.3s;
-     }
-     .timeline-entry:hover:before {
-       background: #888;
-     }
-     .timeline-entry:hover .timeline-content {
-       border-bottom-color: #888;
-     }
-     .timeline-entry2 {
-       position: relative;
-       margin: 20px 0;
-       padding-left: 70px;
-     }
-     .timeline-entry2:before {
-       content: '';
-       position: absolute;
-       top: 50%;
-       left: 28px; /* Adjust position to center the dot on the line */
-       width: 8px; /* Make the dot larger */
-       height: 8px; /* Make the dot larger */
-       background: #969595;
-       border-radius: 50%;
-       z-index: 1; /* Ensure dots are above the line */
-       transition: background 0.3s;
-     }
- .timeline-entry-none {
-       position: relative;
-       margin-left: -10px;
-       margin-top: -10px;
-       padding-left: 70px;
-       font-size: 16px;
-     }
-     .timeline-entry-none:before {
-       content: '';
-       position: absolute;
-       top: 50%;
-       left: 28px; /* Adjust position to center the dot on the line */
-       background: #969595;
-       border-radius: 50%;
-       z-index: 1; /* Ensure dots are above the line */
-       transition: background 0.3s;
-     }
-     .timeline-entry2:hover:before {
-       background: #666;
-     }
-     .timeline-entry2:hover .timeline-content {
-       border-bottom-color: #666;
-     }
-     .timeline-content {
-       background: none;
-       padding: 10px;
-       border-bottom: 1.5px dashed #e5e5e5;
-       position: relative;
-       z-index: -2; /* Ensure content is above the dots */
-       margin-left: -35px;
-       transition: border-bottom-color 0.3s;
-     }
-     .timeline-title {
-       font-size: 17px;
-       font-weight: bold;
-       margin-bottom: 5px;
-     }
-     .timeline-title2 {
-       font-size: 20px;
-       font-weight: bold;
-       margin-bottom: 20px;
-       margin-left: -10px;
-     }
-     .timeline-subtitle {
-       font-size: 16px;
-       font-weight: 400;
-     }
-     .timeline-subtitle2 {
-       font-size: 14px;
-       font-weight: 400;
-     }
-     .timeline-logo {
-       float: left;
-       margin-right: 15px;
-       margin-left: 10px;
-       width: 80px;
-     }
-   </style>
+    <style>
+        .post-title {
+            display: none;
+        }
+        .profile-container {
+            text-align: center;
+        }
+        .profile-name {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .profile-link {
+            border-bottom: 1px solid gray;
+            padding-bottom: 1.5px;
+            font-size: 12px;
+            z-index: 1; /* Ensure links are above other elements */
+            position: relative;
+        }
+        .profile-link2 {
+            padding-bottom: 1.5px;
+            font-size: 12px;
+            z-index: 1; /* Ensure links are above other elements */
+            position: relative;
+        }
+        .timeline {
+            position: relative;
+            margin: 20px 0;
+            padding: 0;
+        }
+        .timeline:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 30px;
+            width: 4px; /* Make the line thicker */
+            background: #f5f5f5;
+            z-index: 0;
+            margin-top: 25px;
+        }
+        .timeline-entry {
+            position: relative;
+            margin: 20px 0;
+            padding-left: 70px;
+        }
+        .timeline-entry:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 29px; /* Adjust position to center the dot on the line */
+            width: 6px; /* Make the dot larger */
+            height: 6px; /* Make the dot larger */
+            background: #bbb;
+            border-radius: 50%;
+            z-index: 1; /* Ensure dots are above the line */
+            transition: background 0.3s;
+        }
+        .timeline-entry:hover:before {
+            background: #888;
+        }
+        .timeline-entry:hover .timeline-content {
+            border-bottom-color: #888;
+        }
+        .timeline-entry2 {
+            position: relative;
+            margin: 20px 0;
+            padding-left: 70px;
+        }
+        .timeline-entry2:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 28px; /* Adjust position to center the dot on the line */
+            width: 8px; /* Make the dot larger */
+            height: 8px; /* Make the dot larger */
+            background: #969595;
+            border-radius: 50%;
+            z-index: 1; /* Ensure dots are above the line */
+            transition: background 0.3s;
+        }
+        .timeline-entry-none {
+            position: relative;
+            margin-left: -10px;
+            margin-top: -10px;
+            padding-left: 70px;
+            font-size: 16px;
+        }
+        .timeline-entry-none:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 28px; /* Adjust position to center the dot on the line */
+            background: #969595;
+            border-radius: 50%;
+            z-index: 1; /* Ensure dots are above the line */
+            transition: background 0.3s;
+        }
+        .timeline-entry2:hover:before {
+            background: #666;
+        }
+        .timeline-entry2:hover .timeline-content {
+            border-bottom-color: #666;
+        }
+        .timeline-content {
+            background: none;
+            padding: 10px;
+            border-bottom: 1.3px dashed #e5e5e5;
+            position: relative;
+            z-index: 2; /* Ensure content is above the dots */
+            margin-left: -35px;
+            transition: border-bottom-color 0.3s;
+        }
+        .timeline-content-last {
+            background: none;
+            padding: 10px;
+            position: relative;
+            z-index: 2; /* Ensure content is above the dots */
+            margin-left: -35px;
+            margin-bottom: 50px;
+            transition: border-bottom-color 0.3s;
+        }
+        .timeline-title {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .timeline-title2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 22px;
+            margin-left: -10px;
+        }
+        .timeline-title4 {
+            font-size: 16px;
+            margin-left: 15px;
+        }
+        .timeline-title5 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        .timeline-subtitle {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .timeline-subtitle2 {
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .timeline-logo {
+            float: left;
+            margin-right: 20px;
+            margin-left: 10px;
+            /* width: 80px; */
+            margin-top: 10px;
+        }
+        .timeline-logo2 {
+            float: left;
+            margin-right: -5px;
+            margin-left: 10px;
+            margin-top: 5px;
+            width: 45px;
+            font-size: 12px;
+        }
+        .timeline-logo3 {
+            float: left;
+            margin-right: -5px;
+            margin-left: 10px;
+            margin-top: 5px;
+            width: 70px;
+            font-size: 12px;
+        }
+        .margin-left {
+            margin-left: 20px;
+        }
+    </style>
 <style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 <div class="profile-container">
-  <img src="../images/me.jpg" alt="profile" style="border-radius: 50%; width: 150px; height: 150px;">
-  <div>
-    <h2 class="profile-name">張 永 義</h2>
-    <a class="profile-link" href="https://benedict.nycu.me/CV.pdf" target="_blank"><b>簡歷</b></a>
-  </div>
+    <img src="../images/me.jpg" alt="profile" style="border-radius: 50%; width: 150px; height: 150px;" />
+    <div>
+        <h2 class="profile-name">張 永 義</h2>
+        <a class="profile-link" href="https://benedict.nycu.me/CV.pdf" target="_blank"><b>簡歷</b></a>
+    </div>
 </div>
 
 <div class="timeline">
-  <div class="timeline-entry2">
-    <div class="timeline-title2">關於</div>
-  </div>
-  <div class="timeline-entry-none">
-      <div>
-      <div >大家好，我是來自馬來西亞的張永義，現在在國立陽明交通大學 - 資訊科學與工程研究所進修中...
-</div>
+    <div class="timeline-entry2">
+        <div class="timeline-title2">關於</div>
     </div>
+    <div class="timeline-entry-none">
+        <div>
+            <div>大家好，我是來自馬來西亞的張永義，現在在國立陽明交通大學 - 資訊科學與工程研究所進修中...</div>
+        </div>
     </div>
-  </div>
 </div>
-
-
-
+<br />
 
 <div class="timeline">
-  <div class="timeline-entry2">
-    <div class="timeline-title2">學歷</div>
-  </div>
-  <div class="timeline-entry">
-    <div class="timeline-content">
-      <img class="timeline-logo" src="../images/logo/nycu_logo.png" alt="NYCU Logo">
-      <div>
-      <div class="timeline-title">資訊科學與工程研究所 (GPA: 4.15/4.30)</div>
-      <div class="timeline-subtitle">國立陽明交通大學, 台灣</div>
-      <div class="timeline-subtitle2">理工碩士 . <span class="timeline-date">2023 - Now</span></div>
+    <div class="timeline-entry2">
+        <div class="timeline-title2">研究領域</div>
     </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-title4">各種網路架構 (Linux Networking, SDN, NFV)</div>
+        </div>
     </div>
-  </div>
-  <div class="timeline-entry">
-    <div class="timeline-content">
-      <img class="timeline-logo" src="../images/logo/ntut_logo.png" alt="Taipei Tech Logo">
-      <div class="timeline-title">互動設計系 媒體組 (GPA: 3.99/4.00 & 系排: 2/82)</div>
-      <div class="timeline-subtitle">國立臺北科技大學, 台灣</div>
-      <div class="timeline-subtitle2">理工學士 . <span class="timeline-date">2019 - 2023</span></div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-title4">雲原生相關技術 (Kubernetes, CI/CD, DevOps)</div>
+        </div>
     </div>
-  </div>
-  <div class="timeline-entry">
-    <div class="timeline-content">
-      <img class="timeline-logo" src="../images/logo/smk_logo.jpg" alt="School Logo">
-      <div class="timeline-title">普通高中 (班排: 1/31)</div>
-      <div class="timeline-subtitle">Sekolah Menengah Kebangsaan Tatau, 馬來西亞</div>
-      <div class="timeline-subtitle2">普通高中 . <span class="timeline-date">2014 - 2018</span></div>
+    <div class="timeline-entry">
+        <div class="timeline-content-last">
+            <div class="timeline-title4">容器化平台技術 (Docker)</div>
+        </div>
     </div>
-  </div>
 </div>
 
-
+<div class="timeline">
+    <div class="timeline-entry2">
+        <div class="timeline-title2">學歷</div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <img class="timeline-logo" src="../images/logo/nycu_logo.png" alt="NYCU Logo" width="70px" />
+            <div class="margin-left">
+                <div class="timeline-title">資訊科學與工程研究所 (GPA: 4.15/4.30)</div>
+                <div class="timeline-subtitle">國立陽明交通大學, 台灣</div>
+                <div class="timeline-subtitle2">理工碩士 . <span class="timeline-date">2023 - Now</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <img class="timeline-logo" src="../images/logo/ntut_logo.png" alt="Taipei Tech Logo" width="70px" />
+            <div class="margin-left">
+                <div class="timeline-title">互動設計系 媒體組 (GPA: 3.99/4.00 & 系排: 2/82)</div>
+                <div class="timeline-subtitle">國立臺北科技大學, 台灣</div>
+                <div class="timeline-subtitle2">理工學士 . <span class="timeline-date">2019 - 2023</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content-last">
+            <img class="timeline-logo" src="../images/logo/smk_logo.jpg" alt="School Logo" width="58px" />
+            <div class="margin-left">
+                <div class="timeline-title">普通高中 (班排: 1/31)</div>
+                <div class="timeline-subtitle">Sekolah Menengah Kebangsaan Tatau, 馬來西亞</div>
+                <div class="timeline-subtitle2">普通高中 . <span class="timeline-date">2014 - 2018</span></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="timeline">
-  <div class="timeline-entry">
-    <div class="timeline-title2">工作經歷</div>
-  </div>
-  <div class="timeline-entry">
-    <div class="timeline-content">
-      <img class="timeline-logo" src="../images/logo/nycu_logo.png" alt="NYCU Logo">
-      <div class="timeline-title">軟體定義網路及網路功能虛擬化助教</div>
-      <div class="timeline-subtitle">國立陽明交通大學, 資訊科學與工程研究所</div>
-      <div class="timeline-subtitle2">工讀 . <span class="timeline-date">2023/08~2024/01</span> . 6個月</div>
+    <div class="timeline-entry2">
+        <div class="timeline-title2">工作經歷</div>
     </div>
-  </div>
-  <div class="timeline-entry">
-    <div class="timeline-content">
-      <img class="timeline-logo" src="../images/logo/makalot_logo.jpg" alt="Company Logo">
-      <div class="timeline-title">軟體開發工程師</div>
-      <div class="timeline-subtitle">聚陽實業股份有限公司, 資訊處應用開發部</div>
-      <div class="timeline-subtitle2">實習 . <span class="timeline-date">2022/07~2023/06</span> . 1年</div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <img class="timeline-logo" src="../images/logo/nycu_logo.png" alt="NYCU Logo" width="70px" />
+            <div class="margin-left">
+                <div class="timeline-title">軟體定義網路及網路功能虛擬化助教</div>
+                <div class="timeline-subtitle">國立陽明交通大學, 資訊科學與工程研究所</div>
+                <div class="timeline-subtitle2">工讀 . <span class="timeline-date">2023/08~2024/01</span> . 6個月</div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="timeline-entry">
-    <div class="timeline-content">
-      <img class="timeline-logo" src="../images/logo/ntut_logo.png" alt="Taipei Tech Logo">
-      <div class="timeline-title">行政助理</div>
-      <div class="timeline-subtitle">國立臺北科技大學, 計算機與網路中心</div>
-      <div class="timeline-subtitle2">工讀 . <span class="timeline-date">2021/06~2023/06</span> . 2年</div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <img class="timeline-logo" src="../images/logo/makalot_logo.jpg" alt="Company Logo" width="63px" />
+            <div class="margin-left">
+                <div class="timeline-title">軟體開發工程師</div>
+                <div class="timeline-subtitle">聚陽實業股份有限公司, 資訊處應用開發部</div>
+                <div class="timeline-subtitle2">實習 . <span class="timeline-date">2022/07~2023/06</span> . 1年</div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="timeline-entry">
-    <div class="timeline-content">
-      <img class="timeline-logo" src="../images/logo/must_logo.png" alt="Mingxin Logo">
-      <div class="timeline-title">專案開發工程師</div>
-      <div class="timeline-subtitle">明新科技大學, 多媒體與遊戲發展系</div>
-      <div class="timeline-subtitle2">接案 . <span class="timeline-date">2022/01~2022/06</span> . 6個月</div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <img class="timeline-logo" src="../images/logo/ntut_logo.png" alt="Taipei Tech Logo" width="70px" />
+            <div class="margin-left">
+                <div class="timeline-title">行政助理</div>
+                <div class="timeline-subtitle">國立臺北科技大學, 計算機與網路中心</div>
+                <div class="timeline-subtitle2">工讀 . <span class="timeline-date">2021/06~2023/06</span> . 2年</div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="timeline-entry">
+        <div class="timeline-content-last">
+            <img class="timeline-logo" src="../images/logo/must_logo.png" alt="Mingxin Logo" width="70px" />
+            <div class="margin-left">
+                <div class="timeline-title">專案開發工程師</div>
+                <div class="timeline-subtitle">明新科技大學, 多媒體與遊戲發展系</div>
+                <div class="timeline-subtitle2">接案 . <span class="timeline-date">2022/01~2022/06</span> . 6個月</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="timeline">
+    <div class="timeline-entry2">
+        <div class="timeline-title2">競賽成就</div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">
+                全國賽 放視大賞 - 榮獲 XR社會公益發展潛力獎 . <a class="profile-link2" target="_blank" href="https://news.ntut.edu.tw/p/406-1000-129024,r1492.php"><u class="small">新聞</u></a>
+            </div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">
+                全國賽 放視大賞 - 榮獲 入圍跨域組 . <a class="profile-link2" target="_blank" href="https://www.1111.com.tw/news/jobns/151351"><u class="small">新聞</u></a>
+            </div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">
+                全國賽 技職盃黑客松 - 榮獲 最佳簡報獎 .
+                <a class="profile-link2" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=pfbid07ZVz1cMYizifQphwpuUQfC3Gt5uwUSD4tPuo3MehWgo31bNnZaUmdJGZdit9wDhgl&id=100003780215925"><u class="small">貼文</u></a>
+            </div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">
+                分區賽 技職盃黑客松 - 榮獲 最佳創造價值獎 .
+                <a class="profile-link2" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=pfbid07ZVz1cMYizifQphwpuUQfC3Gt5uwUSD4tPuo3MehWgo31bNnZaUmdJGZdit9wDhgl&id=100003780215925"><u class="small">貼文</u></a>
+            </div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">
+                全國賽 技職盃黑客松 - 榮獲 評審團大獎 (冠軍) .
+                <a
+                    class="profile-link2"
+                    target="_blank"
+                    href="https://tw.news.yahoo.com/2022%E9%BB%91%E5%AE%A2%E6%9D%BE-%E6%8A%80%E8%81%B7%E7%9B%83%E5%85%A8%E5%9C%8B%E5%A4%A7%E8%B3%BD-%E7%B8%BD%E6%B1%BA%E8%B3%BD-%E5%8C%97%E7%A7%91%E5%A4%A7%E7%8D%B2-%E8%A9%95%E5%AF%A9%E5%9C%98%E5%A4%A7%E7%8D%8E-093007126.html"
+                >
+                    <u class="small">新聞</u>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">
+                分區賽 技職盃黑客松 - 榮獲 最佳設計獎 . <a class="profile-link2" target="_blank" href="https://www.facebook.com/photo/?fbid=362414349248649&set=a.351730486983702"><u class="small">貼文</u></a>
+            </div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">
+                全國賽 5G通訊大賽 - 榮獲 入圍數位娛樂組 . <a class="profile-link2" target="_blank" href="https://www.ideas-hatch.com/evb_share_detail.jsp?id=26"><u class="small">作品</u></a>
+            </div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content-last">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">
+                全國賽 Intel® DevCup x OpenVINO™ Toolkit - 榮獲 入圍AI競賽 . <a class="profile-link2" target="_blank" href="https://makerpro.cc/intel-devcup/tidy"><u class="small">作品</u></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="timeline">
+    <div class="timeline-entry2">
+        <div class="timeline-title2">獎學金</div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-title5">國立陽明交通大學</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2024</div>
+            <div class="timeline-title4">全校 研究所優秀僑生獎學金 (GPA: 4.15/4.30)</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-title5">國立臺北科技大學</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">互動設計系 108-1 書卷獎 (GPA: 4.0/4.0)</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">互動設計系 108-2 書卷獎 (GPA: 4.0/4.0)</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">互動設計系 109-2 書卷獎 (GPA: 4.0/4.0)</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">互動設計系 畢業成績優良獎 (系排二 2/82)</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">全校 品學兼優畢業僑生委員長獎 (全校僅一名)</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">全校 109-1 學行優良僑生獎學金</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">全校 111-2 學行優良僑生獎學金</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">全校 112-2 學行優良僑生獎學金</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">全校 111-1 學術性競賽成績優良獎金</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">全校 111-2 學術性競賽成績優良獎金</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content-last">
+            <div class="timeline-logo2">2023</div>
+            <div class="timeline-title4">全校 112-2 學術性競賽成績優良獎金</div>
+        </div>
+    </div>
+</div>
+
+<div class="timeline">
+    <div class="timeline-entry2">
+        <div class="timeline-title2">聯絡我</div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo3">Email</div>
+            <div class="timeline-title4"><a href="mailto:benedicttiong.cs@gmail.com" target="_blank">benedicttiong.cs@gmail.com</a></div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo3">LinkedIn</div>
+            <div class="timeline-title4"><a href="https://www.linkedin.com/in/benedict-tiong" target="_blank">https://www.linkedin.com/in/benedict-tiong</a></div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content-last">
+            <div class="timeline-logo3">GitHub</div>
+            <div class="timeline-title4"><a href="https://github.com/Benedict-CS" target="_blank">https://github.com/Benedict-CS</a></div>
+        </div>
+    </div>
 </div>
 
       </div>
