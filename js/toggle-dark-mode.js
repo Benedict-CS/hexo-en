@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("toggle-dark-mode.js loaded");
   
     // 检查Darkmode.js是否已加载
     if (typeof Darkmode === 'undefined') {
-      console.error("Darkmode.js is not loaded");
       return;
     }
   
@@ -18,13 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
       buttonColorDark: '#100f2c',
       buttonColorLight: '#fff',
       isActivated: true,
-      saveInCookies: true,
+      saveInCookies: false,
       autoMatchOsTheme: false
     };
   
     // 手动切换模式
     window.toggleDarkMode = function () {
-      console.log("toggleDarkMode called");
       const darkmode = new Darkmode(options);
       darkmode.toggle();
       const currentTheme = document.documentElement.getAttribute("data-theme");
