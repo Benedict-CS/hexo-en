@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Benedict</title>
+  
+  
+  <link href="https://benedict-cs.github.io/hexo/atom.xml" rel="self"/>
+  
+  <link href="https://benedict-cs.github.io/hexo/"/>
+  <updated>2024-06-30T04:39:40.959Z</updated>
+  <id>https://benedict-cs.github.io/hexo/</id>
+  
+  <author>
+    <name>Benedict</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>eng</title>
+    <link href="https://benedict-cs.github.io/hexo/2024/06/30/test2%20copy%202/"/>
+    <id>https://benedict-cs.github.io/hexo/2024/06/30/test2%20copy%202/</id>
+    <published>2024-06-30T04:43:03.277Z</published>
+    <updated>2024-06-30T04:39:40.959Z</updated>
+    
+    <content type="html"><![CDATA[<p>ekfasdhj;kl</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;ekfasdhj;kl&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="日记" scheme="https://benedict-cs.github.io/hexo/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>eng</title>
+    <link href="https://benedict-cs.github.io/hexo/2024/06/30/test2%20copy/"/>
+    <id>https://benedict-cs.github.io/hexo/2024/06/30/test2%20copy/</id>
+    <published>2024-06-30T04:43:02.590Z</published>
+    <updated>2024-06-30T04:39:40.959Z</updated>
+    
+    <content type="html"><![CDATA[<p>ekfasdhj;kl</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;ekfasdhj;kl&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="日记" scheme="https://benedict-cs.github.io/hexo/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>eng</title>
+    <link href="https://benedict-cs.github.io/hexo/2024/06/29/test2/"/>
+    <id>https://benedict-cs.github.io/hexo/2024/06/29/test2/</id>
+    <published>2024-06-29T07:29:42.064Z</published>
+    <updated>2024-07-01T03:10:10.676Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note default"><p><strong>default</strong>  </p></div><div class="note primary"><p><strong>primary</strong>  </p></div><div class="note success"><p><strong>success</strong>  </p></div><div class="note info"><p><strong>info</strong>  </p></div><div class="note warning"><p><strong>warning</strong>  </p></div><div class="note danger"><p><strong>danger</strong>  </p></div><p>ekfasdhj;kl</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;div class=&quot;note default&quot;&gt;&lt;p&gt;&lt;strong&gt;default&lt;/strong&gt;  &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;&lt;strong&gt;primary&lt;/strong&gt;  &lt;/p&gt;
+&lt;/div&gt;
+&lt;div c</summary>
+      
+    
+    
+    
+    <category term="日记" scheme="https://benedict-cs.github.io/hexo/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+</feed>
