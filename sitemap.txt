@@ -1,14 +1,14 @@
+https://benedict-cs.github.io/hexo/tags/index.html
 https://benedict-cs.github.io/hexo/lib/fancybox/README.html
 https://benedict-cs.github.io/hexo/2024/06/29/test2/
 https://benedict-cs.github.io/hexo/lib/bookmark/README.html
-https://benedict-cs.github.io/hexo/lib/bookmark/renovate.json
 https://benedict-cs.github.io/hexo/lib/bookmark/package.json
+https://benedict-cs.github.io/hexo/lib/bookmark/renovate.json
 https://benedict-cs.github.io/hexo/about/index.html
 https://benedict-cs.github.io/hexo/2024/06/30/test2%20copy%202/
 https://benedict-cs.github.io/hexo/2024/06/30/test2%20copy/
 https://benedict-cs.github.io/hexo/diaries/index.html
 https://benedict-cs.github.io/hexo/categories/index.html
-https://benedict-cs.github.io/hexo/tags/index.html
 https://benedict-cs.github.io/hexo/home/index.html
 https://benedict-cs.github.io/hexo/archives/index.html
 https://benedict-cs.github.io/hexo
