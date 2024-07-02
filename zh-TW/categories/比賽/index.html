@@ -325,32 +325,52 @@ document.addEventListener('DOMContentLoaded', function () {
   <footer class="footer">
     <div class="footer-inner">
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <div class="copyright">
-    &copy; 
-    <span itemprop="copyrightYear">2024</span>
-    <span class="with-love">
-      <i class="fa fa-heart"></i>
-    </span>
-    <span class="author" itemprop="copyrightHolder">Benedict</span>
-  </div>
-<div class="busuanzi-count">
-    <span class="post-meta-item" id="busuanzi_container_site_uv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
+
+<div class="footer-container">
+    <div class="copyright">
+      &copy; 
+      <span itemprop="copyrightYear">2024</span>
+      <span class="with-love">
+        <i class="fa fa-heart"></i>
       </span>
-      <span class="site-uv" title="訪客總數">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="總瀏覽次數">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>
+      <span class="author" itemprop="copyrightHolder">Benedict</span>
+    </div>
+    <div class="busuanzi-count">
+        <span class="post-meta-item" id="busuanzi_container_site_uv">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-user"></i>
+          </span>
+          <span class="site-uv" title="訪客總數">
+            <span id="busuanzi_value_site_uv"></span>
+          </span>
+        </span>
+        <span class="post-meta-item" id="busuanzi_container_site_pv">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+          </span>
+          <span class="site-pv" title="總瀏覽次數">
+            <span id="busuanzi_value_site_pv"></span>
+          </span>
+        </span>
+    </div>
 </div>
+
+<style>
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.busuanzi-count {
+margin-left:20px;
+}
+
+.post-meta-item {
+  display: flex;
+  align-items: center;
+}
+</style>
 
     </div>
   </footer>
