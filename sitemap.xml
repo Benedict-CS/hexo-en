@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://benedict-cs.github.io/hexo/about/index.html</loc>
+    
+    <lastmod>2024-07-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://benedict-cs.github.io/hexo/home/index.html</loc>
+    
+    <lastmod>2024-07-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://benedict-cs.github.io/hexo/2022/11/07/bestdesign/</loc>
     
     <lastmod>2024-07-01</lastmod>
@@ -47,15 +65,6 @@
   </url>
   
   <url>
-    <loc>https://benedict-cs.github.io/hexo/about/index.html</loc>
-    
-    <lastmod>2024-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://benedict-cs.github.io/hexo/lib/fancybox/README.html</loc>
     
     <lastmod>2024-07-01</lastmod>
@@ -74,15 +83,6 @@
   </url>
   
   <url>
-    <loc>https://benedict-cs.github.io/hexo/lib/bookmark/renovate.json</loc>
-    
-    <lastmod>2024-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://benedict-cs.github.io/hexo/lib/bookmark/package.json</loc>
     
     <lastmod>2024-07-01</lastmod>
@@ -92,9 +92,9 @@
   </url>
   
   <url>
-    <loc>https://benedict-cs.github.io/hexo/home/index.html</loc>
+    <loc>https://benedict-cs.github.io/hexo/lib/bookmark/renovate.json</loc>
     
-    <lastmod>2024-06-30</lastmod>
+    <lastmod>2024-07-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -112,7 +112,7 @@
 
   <url>
     <loc>https://benedict-cs.github.io/hexo</loc>
-    <lastmod>2024-07-01</lastmod>
+    <lastmod>2024-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -120,14 +120,14 @@
   
   <url>
     <loc>https://benedict-cs.github.io/hexo/tags/competition/</loc>
-    <lastmod>2024-07-01</lastmod>
+    <lastmod>2024-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://benedict-cs.github.io/hexo/tags/University/</loc>
-    <lastmod>2024-07-01</lastmod>
+    <lastmod>2024-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -136,7 +136,7 @@
   
   <url>
     <loc>https://benedict-cs.github.io/hexo/categories/%E6%AF%94%E8%B3%BD/</loc>
-    <lastmod>2024-07-01</lastmod>
+    <lastmod>2024-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
