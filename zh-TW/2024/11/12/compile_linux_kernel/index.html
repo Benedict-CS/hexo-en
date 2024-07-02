@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <script src="/hexo/js/toggle-dark-mode.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.2.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/hexo/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/hexo/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/hexo/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/hexo/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/hexo/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"benedict-cs.github.io","root":"/hexo/","images":"/hexo/images","scheme":"Mist","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":260,"width_dual_column":200,"display":"hide","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"},"path":"/hexo/search.xml","localsearch":{"enable":true,"top_n_per_article":100,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/hexo/js/config.js"></script>
+<script src="/hexo/js/toggle-dark-mode.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+    <meta name="description" content="Assignment 1: Compiling Linux Kernel and Adding Custom System Calls Compiling Linux Kernel Change kernel suffix   Adding custom system calls sys_hello sys_revstr      Part 1: Compiling Linux Kernel &amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Compiling Linux Kernel and Add Custom System Calls">
+<meta property="og:url" content="https://benedict-cs.github.io/hexo/zh-TW/2024/11/12/compile_linux_kernel/index.html">
+<meta property="og:site_name" content="Benedict">
+<meta property="og:description" content="Assignment 1: Compiling Linux Kernel and Adding Custom System Calls Compiling Linux Kernel Change kernel suffix   Adding custom system calls sys_hello sys_revstr      Part 1: Compiling Linux Kernel &amp;">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://hackmd.io/_uploads/BJCXNUAQ6.png">
+<meta property="og:image" content="https://hackmd.io/_uploads/HJUIE4R7a.png">
+<meta property="og:image" content="https://hackmd.io/_uploads/ByrOVERma.png">
+<meta property="article:published_time" content="2024-11-11T22:40:12.000Z">
+<meta property="article:modified_time" content="2024-07-02T14:42:52.883Z">
+<meta property="article:author" content="Benedict">
+<meta property="article:tag" content="OS">
+<meta property="article:tag" content="Linux Kernel">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hackmd.io/_uploads/BJCXNUAQ6.png">
+
+
+<link rel="canonical" href="https://benedict-cs.github.io/hexo/zh-TW/2024/11/12/compile_linux_kernel/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://benedict-cs.github.io/hexo/2024/11/12/compile_linux_kernel/","path":"zh-TW/2024/11/12/compile_linux_kernel/","title":"Compiling Linux Kernel and Add Custom System Calls"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Compiling Linux Kernel and Add Custom System Calls | Benedict</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/hexo/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/hexo/atom.xml" title="Benedict" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body data-theme="light" itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/hexo/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Benedict</p>
+      <i class="logo-line"></i>
+    </a>
+
+    <a href="javascript:void(0)" rel="external nofollow noreferrer" onclick="toggleDarkMode()" class="dark-mode-toggle" style="text-decoration:none; margin-left: -4px; vertical-align: 0.925em;">
+      <i id="theme-icon" class="fa fa-moon"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜尋" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/hexo/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a></li><li class="menu-item menu-item-about"><a href="/hexo/about" rel="section"><i class="fa fa-user fa-fw"></i>關於</a></li><li class="menu-item menu-item-tags"><a href="/hexo/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a></li><li class="menu-item menu-item-categories"><a href="/hexo/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a></li><li class="menu-item menu-item-archives"><a href="/hexo/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a></li>
+          <li class="menu-item menu-item-search">
+            <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+            </a>
+          </li>
+        <li class="menu-item menu-item-switch_lang">
+          <a href="javascript:void(0)" rel="external nofollow noreferrer" id="switch-lang" role="button">
+            <i class="fa fa-language" style="font-size: 1.5em; vertical-align: -.125em;"></i> 
+          </a>
+        </li>
+  
+  </ul>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const langSwitch = document.getElementById('switch-lang');
+  if (langSwitch) {
+    langSwitch.addEventListener('click', function () {
+      window.location.href = "https://benedict.nycu.me/en/index.html"; // Redirect to the new URL
+    });
+  }
+});
+</script>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜尋..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Part-1-Compiling-Linux-Kernel-Change-kernel-suffix"><span class="nav-number">1.</span> <span class="nav-text">Part 1: Compiling Linux Kernel &amp; Change kernel suffix</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Part-2-Adding-custom-system-calls"><span class="nav-number">2.</span> <span class="nav-text">Part 2: Adding custom system calls</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sys-hello"><span class="nav-number">2.1.</span> <span class="nav-text">sys_hello</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sys-revstr"><span class="nav-number">2.2.</span> <span class="nav-text">sys_revstr</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Benedict"
+      src="/hexo/images/me.jpg">
+  <p class="site-author-name" itemprop="name">Benedict</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/hexo/archives/">
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/hexo/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/hexo/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yourname" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yourname" rel="noopener me external nofollow noreferrer" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:ben111611@gmail.com" title="E-Mail → mailto:ben111611@gmail.com" rel="noopener me external nofollow noreferrer" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.facebook.com/yourname" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;yourname" rel="noopener me external nofollow noreferrer" target="_blank"><i class="fab fa-facebook fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://youtube.com/yourname" title="YouTube → https:&#x2F;&#x2F;youtube.com&#x2F;yourname" rel="noopener me external nofollow noreferrer" target="_blank"><i class="fab fa-youtube fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/yourname" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;yourname" rel="noopener me external nofollow noreferrer" target="_blank"><i class="fab fa-instagram fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/hexo/atom.xml" title="RSS → &#x2F;atom.xml" rel="noopener me"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://benedict-cs.github.io/hexo/2024/11/12/compile_linux_kernel/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/hexo/images/me.jpg">
+      <meta itemprop="name" content="Benedict">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Benedict">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Compiling Linux Kernel and Add Custom System Calls | Benedict">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Compiling Linux Kernel and Add Custom System Calls
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">發表於</span>
+
+      <time title="創建時間：2024-11-12 06:40:12" itemprop="dateCreated datePublished" datetime="2024-11-12T06:40:12+08:00">2024-11-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分類於</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/hexo/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-item" title="閱讀次數" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">閱讀次數：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><ul>
+<li>Assignment 1: Compiling Linux Kernel and Adding Custom System Calls<ul>
+<li>Compiling Linux Kernel<ul>
+<li><code>Change kernel suffix</code></li>
+</ul>
+</li>
+<li>Adding custom system calls<ul>
+<li><code>sys_hello</code></li>
+<li><code>sys_revstr</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Part-1-Compiling-Linux-Kernel-Change-kernel-suffix"><a href="#Part-1-Compiling-Linux-Kernel-Change-kernel-suffix" class="headerlink" title="Part 1: Compiling Linux Kernel &amp; Change kernel suffix"></a>Part 1: Compiling Linux Kernel &amp; Change kernel suffix</h2><p><strong>Step 1: Download and Extract the Linux kernel source code</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.12.tar.xz</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xJf linux-5.19.12.tar.xz</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd linux-5.19.12</span><br></pre></td></tr></table></figure>
+
+<p><strong>Step 2: Install essential tools and libraries required for compiling the kernel</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt upgrade</span><br><span class="line">sudo apt-get install flex</span><br><span class="line">sudo apt-get install bison</span><br><span class="line">sudo apt install build-essential</span><br><span class="line">sudo apt install libelf-dev libssl-dev</span><br><span class="line">sudo apt-get install libncurses5-dev gcc make git exuberant-ctags bc libssl-dev</span><br></pre></td></tr></table></figure>
+
+<p><strong>Step 3: Copy current kernel config file, then set it as default configuration</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp /boot/config-`uname -r`* .config</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make defconfig</span><br></pre></td></tr></table></figure>
+
+<p><strong>Step 4: Modify the config file</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim .config</span><br></pre></td></tr></table></figure>
+
+<p>Find <code>CONFIG_LOCALVERSION</code> change value to <code>-os-312551002</code></p>
+<p><strong>Step 5: Compile the kernel (wait 20~50 mins)</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make -j4</span><br></pre></td></tr></table></figure>
+
+<p><strong>Step 6: Install the kernel modules</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo make modules_install install</span><br></pre></td></tr></table></figure>
+
+<p><strong>Step 7: Update GRUB, the bootloader</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo update-grub2</span><br></pre></td></tr></table></figure>
+
+<p><strong>Step 8: Reboot the system</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
+<p>Press <strong>Esc</strong> button when system boot &gt; Advanced options for Ubuntu &gt; choose <code>Linux 5.19.12-os-312551002</code> to start</p>
+<p><strong>Step 9: Check the running kernel version</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -a</span><br></pre></td></tr></table></figure>
+<p><strong>The screenshot of changed kernel suffix</strong><br><img data-src="https://hackmd.io/_uploads/BJCXNUAQ6.png" alt="image"></p>
+<h2 id="Part-2-Adding-custom-system-calls"><a href="#Part-2-Adding-custom-system-calls" class="headerlink" title="Part 2: Adding custom system calls"></a>Part 2: Adding custom system calls</h2><h3 id="sys-hello"><a href="#sys-hello" class="headerlink" title="sys_hello"></a><code>sys_hello</code></h3><p>For the implementation of the sys_hello system calls, I <font color="#f00">modified 4 kernel source files</font> and <font color="#f00">added 1 new C code</font> to verify if the system calls work correctly. The modified and added files are:</p>
+<ol>
+<li>linux-5.19.12&#x2F;kernel&#x2F;<font color="#f00">sys.c</font></li>
+<li>linux-5.19.12&#x2F;arch&#x2F;x86&#x2F;include&#x2F;generated&#x2F;uapi&#x2F;asm&#x2F;<font color="#f00">unistd_64.h</font></li>
+<li>linux-5.19.12&#x2F;arch&#x2F;x86&#x2F;entry&#x2F;syscalls&#x2F;<font color="#f00">syscall_64.tbl</font></li>
+<li>linux-5.19.12&#x2F;include&#x2F;linux&#x2F;<font color="#f00">syscalls.h</font></li>
+<li><font color="#f00">sys_hello.c</font></li>
+</ol>
+<p><strong>Step 1: In the sys.c file, add the following code to defines a new system call named “hello”.</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SYSCALL_DEFINE0(hello)&#123;</span><br><span class="line">	printk(KERN_INFO <span class="string">&quot;Hello, world! \n&quot;</span>);</span><br><span class="line">	printk(KERN_INFO <span class="string">&quot;312551002 \n&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Step 2: In the unistd_64.h file, add the following code to defines the system call number for “hello”.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#define __NR_hello 548</span><br></pre></td></tr></table></figure>
+<p><strong>Step 3: In the syscall_64.tbl file, add the following entry to map system call number to its corresponding function.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">548	common	hello	sys_hello</span><br></pre></td></tr></table></figure>
+<p><strong>Step 4: In the syscalls.h file, add the following code to add the new system call in the header file.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">asmlinkage long sys_hello(void);</span><br></pre></td></tr></table></figure>
+<p><strong>Step 5: Create new C code file named sys_hello.c and add the following code:</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;assert.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;unistd.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/syscall.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> __NR_hello 548</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span> &#123;</span><br><span class="line">    <span class="type">int</span> ret = syscall(__NR_hello);</span><br><span class="line">    assert(ret == <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Step 6: Rebuild the kernel to compile the modified kernel source code.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make</span><br></pre></td></tr></table></figure>
+<p><strong>Step 7: Reinstall the kernel</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo make modules_install install</span><br></pre></td></tr></table></figure>
+<p><strong>Step 8: Reboot the kernel</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
+<p><strong>Step 9: Compile the sys_hello.c file to test if the system call operates correctly.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc sys_hello.c -o sys_hello</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./sys_hello</span><br></pre></td></tr></table></figure>
+<p><strong>Step 10: Display the output messages produced by the sys_hello system call.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dmesg | tail</span><br></pre></td></tr></table></figure>
+
+<p><strong>The screenshot of the results of executing sys_hello system call:</strong><br><img data-src="https://hackmd.io/_uploads/HJUIE4R7a.png" alt="image"></p>
+<h3 id="sys-revstr"><a href="#sys-revstr" class="headerlink" title="sys_revstr"></a><code>sys_revstr</code></h3><p>For the implementation of the sys_hello system calls, I <font color="#f00">modified 4 kernel source files</font> and <font color="#f00">added 1 new C code</font> to verify if the system calls work correctly. The modified and added files are:</p>
+<ol>
+<li>linux-5.19.12&#x2F;kernel&#x2F;<font color="#f00">sys.c</font></li>
+<li>linux-5.19.12&#x2F;arch&#x2F;x86&#x2F;include&#x2F;generated&#x2F;uapi&#x2F;asm&#x2F;<font color="#f00">unistd_64.h</font></li>
+<li>linux-5.19.12&#x2F;arch&#x2F;x86&#x2F;entry&#x2F;syscalls&#x2F;<font color="#f00">syscall_64.tbl</font></li>
+<li>linux-5.19.12&#x2F;include&#x2F;linux&#x2F;<font color="#f00">syscalls.h</font></li>
+<li><font color="#f00">sys_revstr.c</font></li>
+</ol>
+<p><strong>Step 1: In the sys.c file, add the following code to defines a new system call named “revstr”.</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">SYSCALL_DEFINE2(revstr, <span class="type">int</span>, len, <span class="type">char</span> __user *, usr_str) &#123;</span><br><span class="line">    <span class="type">char</span> k_str[<span class="number">256</span>];</span><br><span class="line">    <span class="type">char</span> k_revstr[<span class="number">256</span>];</span><br><span class="line">    <span class="type">int</span> start = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> end = len - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(len &gt;= <span class="keyword">sizeof</span>(k_str))</span><br><span class="line">        <span class="keyword">return</span> -EINVAL;</span><br><span class="line">    <span class="keyword">if</span>(copy_from_user(k_str, usr_str, len))</span><br><span class="line">        <span class="keyword">return</span> -EFAULT;</span><br><span class="line"></span><br><span class="line">    k_str[len] = <span class="string">&#x27;\0&#x27;</span>;</span><br><span class="line">    printk(KERN_INFO <span class="string">&quot;The origin string: %s&quot;</span>, k_str);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(start &lt; end) &#123;</span><br><span class="line">        <span class="type">char</span> temp = k_str[start];</span><br><span class="line">        k_str[start] = k_str[end];</span><br><span class="line">        k_str[end] = temp;</span><br><span class="line">        start++;</span><br><span class="line">        end--;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">strncpy</span>(k_revstr, k_str, <span class="keyword">sizeof</span>(k_str));</span><br><span class="line">    printk(KERN_INFO <span class="string">&quot;The reversed string: %s&quot;</span>, k_revstr);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Step 2: In the unistd_64.h file, add the following code to defines the system call number for “revstr”.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#define __NR_revstr 549</span><br></pre></td></tr></table></figure>
+<p><strong>Step 3: In the syscall_64.tbl file, add the following entry to map system call number to its corresponding function.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">549	common	revstr	sys_revstr</span><br></pre></td></tr></table></figure>
+<p><strong>Step 4: In the syscalls.h file, add the following code to add the new system call in the header file.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">asmlinkage long sys_revstr(int len, char __user *usr_str);</span><br></pre></td></tr></table></figure>
+<p><strong>Step 5: Create new C code file named sys_revstr.c and add the following code:</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;assert.h&gt;</span><br><span class="line">#include &lt;unistd.h&gt;</span><br><span class="line">#include &lt;sys/syscall.h&gt;</span><br><span class="line"></span><br><span class="line">#define __NR_revstr 549</span><br><span class="line"></span><br><span class="line">int main(int argc, char *argv[]) &#123;  </span><br><span class="line">    int ret1 = syscall(__NR_revstr, 5, &quot;hello&quot;);</span><br><span class="line">    assert(ret1 == 0);</span><br><span class="line"></span><br><span class="line">    int ret2 = syscall(__NR_revstr, 11, &quot;5Y573M C411&quot;);</span><br><span class="line">    assert(ret2 == 0);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Step 6: Rebuild the kernel to compile the modified kernel source code.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make</span><br></pre></td></tr></table></figure>
+<p><strong>Step 7: Reinstall the kernel</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo make modules_install install</span><br></pre></td></tr></table></figure>
+<p><strong>Step 8: Reboot the kernel</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
+<p><strong>Step 9: Compile the sys_revstr.c file to test if the system call operates correctly.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc sys_revstr.c -o sys_revstr</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./sys_revstr</span><br></pre></td></tr></table></figure>
+<p><strong>Step 10: Display the output messages produced by the sys_ revstr system call.</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dmesg | tail</span><br></pre></td></tr></table></figure>
+<p><strong>The screenshot of the results of executing sys_ revstr system call:</strong><br><img data-src="https://hackmd.io/_uploads/ByrOVERma.png" alt="image"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/hexo/tags/OS/" rel="tag"># OS</a>
+              <a href="/hexo/tags/Linux-Kernel/" rel="tag"># Linux Kernel</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/hexo/2023/11/12/university/" rel="prev" title="大學畢業不是終點而是起點">
+                  <i class="fa fa-angle-left"></i> 大學畢業不是終點而是起點
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/hexo/2024/11/13/linux_scheduling_policies/" rel="next" title="Apply different scheduling policies on created threads">
+                  Apply different scheduling policies on created threads <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+<script src="https://utteranc.es/client.js"
+        repo="https://github.com/Benedict-CS/hexo"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="footer-container">
+    <div class="copyright">
+      &copy; 
+      <span itemprop="copyrightYear">2024</span>
+      <span class="with-love">
+        <i class=""></i>
+      </span>
+      <span class="pa"><span class="author" itemprop="copyrightHolder">Benedict</span></span>
+    </div>
+    <div class="busuanzi-count">
+        <span class="post-meta-item" id="busuanzi_container_site_uv">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-user"></i>
+          </span>
+          <span class="site-uv" title="訪客總數">
+            <span id="busuanzi_value_site_uv"></span>
+          </span>
+        </span>
+        <span class="post-meta-item" id="busuanzi_container_site_pv">
+          <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+          </span>
+          <span class="site-pv" title="總瀏覽次數">
+            <span id="busuanzi_value_site_pv"></span>
+          </span>
+        </span>
+    </div>
+</div>
+
+<style>
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.busuanzi-count {
+margin-left:20px;
+}
+
+.post-meta-item {
+  display: flex;
+  align-items: center;
+}
+.pa{
+margin-left:-10px;
+}
+</style>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="回到頂端">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/hexo/js/comments.js"></script><script src="/hexo/js/utils.js"></script><script src="/hexo/js/motion.js"></script><script src="/hexo/js/sidebar.js"></script><script src="/hexo/js/next-boot.js"></script><script src="/hexo/js/pjax.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/hexo/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/hexo/js/third-party/fancybox.js"></script>
+
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<style>
+.flex-container {
+  display: flex | inline-flex;
+}
+</style>
+
+
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Benedict-CS/hexo","issue_term":"title","theme":"github-light"}</script>
+<script src="/hexo/js/third-party/comments/utterances.js"></script>
+
+</body>
+</html>
