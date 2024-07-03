@@ -3,11 +3,11 @@
   <title>Benedict</title>
   
   
-  <link href="https://benedict-cs.github.io/hexo/atom.xml" rel="self"/>
+  <link href="https://benedict-cs.github.io/hexo-en/atom.xml" rel="self"/>
   
-  <link href="https://benedict-cs.github.io/hexo/"/>
+  <link href="https://benedict-cs.github.io/hexo-en/"/>
   <updated>2024-07-03T03:39:39.699Z</updated>
-  <id>https://benedict-cs.github.io/hexo/</id>
+  <id>https://benedict-cs.github.io/hexo-en/</id>
   
   <author>
     <name>Benedict</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>System Information Fetching Kernel Module</title>
-    <link href="https://benedict-cs.github.io/hexo/2024/11/14/kernel_module/"/>
-    <id>https://benedict-cs.github.io/hexo/2024/11/14/kernel_module/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2024/11/14/kernel_module/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2024/11/14/kernel_module/</id>
     <published>2024-11-13T22:40:12.000Z</published>
     <updated>2024-07-03T03:39:39.699Z</updated>
     
@@ -37,19 +37,19 @@
     
     
     
-    <category term="OS" scheme="https://benedict-cs.github.io/hexo/categories/OS/"/>
+    <category term="OS" scheme="https://benedict-cs.github.io/hexo-en/categories/OS/"/>
     
     
-    <category term="OS" scheme="https://benedict-cs.github.io/hexo/tags/OS/"/>
+    <category term="OS" scheme="https://benedict-cs.github.io/hexo-en/tags/OS/"/>
     
-    <category term="Linux Kernel" scheme="https://benedict-cs.github.io/hexo/tags/Linux-Kernel/"/>
+    <category term="Linux Kernel" scheme="https://benedict-cs.github.io/hexo-en/tags/Linux-Kernel/"/>
     
   </entry>
   
   <entry>
     <title>Apply different scheduling policies on created threads</title>
-    <link href="https://benedict-cs.github.io/hexo/2024/11/13/linux_scheduling_policies/"/>
-    <id>https://benedict-cs.github.io/hexo/2024/11/13/linux_scheduling_policies/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2024/11/13/linux_scheduling_policies/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2024/11/13/linux_scheduling_policies/</id>
     <published>2024-11-12T22:40:12.000Z</published>
     <updated>2024-07-03T03:38:15.071Z</updated>
     
@@ -66,19 +66,19 @@
     
     
     
-    <category term="OS" scheme="https://benedict-cs.github.io/hexo/categories/OS/"/>
+    <category term="OS" scheme="https://benedict-cs.github.io/hexo-en/categories/OS/"/>
     
     
-    <category term="OS" scheme="https://benedict-cs.github.io/hexo/tags/OS/"/>
+    <category term="OS" scheme="https://benedict-cs.github.io/hexo-en/tags/OS/"/>
     
-    <category term="Linux Kernel" scheme="https://benedict-cs.github.io/hexo/tags/Linux-Kernel/"/>
+    <category term="Linux Kernel" scheme="https://benedict-cs.github.io/hexo-en/tags/Linux-Kernel/"/>
     
   </entry>
   
   <entry>
     <title>Compiling Linux Kernel and Add Custom System Calls</title>
-    <link href="https://benedict-cs.github.io/hexo/2024/11/12/compile_linux_kernel/"/>
-    <id>https://benedict-cs.github.io/hexo/2024/11/12/compile_linux_kernel/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2024/11/12/compile_linux_kernel/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2024/11/12/compile_linux_kernel/</id>
     <published>2024-11-11T22:40:12.000Z</published>
     <updated>2024-07-03T03:36:46.895Z</updated>
     
@@ -95,19 +95,19 @@
     
     
     
-    <category term="OS" scheme="https://benedict-cs.github.io/hexo/categories/OS/"/>
+    <category term="OS" scheme="https://benedict-cs.github.io/hexo-en/categories/OS/"/>
     
     
-    <category term="OS" scheme="https://benedict-cs.github.io/hexo/tags/OS/"/>
+    <category term="OS" scheme="https://benedict-cs.github.io/hexo-en/tags/OS/"/>
     
-    <category term="Linux Kernel" scheme="https://benedict-cs.github.io/hexo/tags/Linux-Kernel/"/>
+    <category term="Linux Kernel" scheme="https://benedict-cs.github.io/hexo-en/tags/Linux-Kernel/"/>
     
   </entry>
   
   <entry>
     <title>大學畢業不是終點而是起點</title>
-    <link href="https://benedict-cs.github.io/hexo/2023/11/12/university/"/>
-    <id>https://benedict-cs.github.io/hexo/2023/11/12/university/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2023/11/12/university/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2023/11/12/university/</id>
     <published>2023-11-11T22:40:12.000Z</published>
     <updated>2024-07-02T14:36:25.454Z</updated>
     
@@ -128,17 +128,17 @@
     
     
     
-    <category term="大學" scheme="https://benedict-cs.github.io/hexo/categories/%E5%A4%A7%E5%AD%B8/"/>
+    <category term="大學" scheme="https://benedict-cs.github.io/hexo-en/categories/%E5%A4%A7%E5%AD%B8/"/>
     
     
-    <category term="University" scheme="https://benedict-cs.github.io/hexo/tags/University/"/>
+    <category term="University" scheme="https://benedict-cs.github.io/hexo-en/tags/University/"/>
     
   </entry>
   
   <entry>
     <title>全國賽 放視大賞 - 榮獲 XR社會公益發展潛力獎</title>
-    <link href="https://benedict-cs.github.io/hexo/2023/11/11/xrpotential/"/>
-    <id>https://benedict-cs.github.io/hexo/2023/11/11/xrpotential/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2023/11/11/xrpotential/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2023/11/11/xrpotential/</id>
     <published>2023-11-10T22:40:12.000Z</published>
     <updated>2024-07-02T13:27:59.247Z</updated>
     
@@ -159,19 +159,19 @@
     
     
     
-    <category term="比賽" scheme="https://benedict-cs.github.io/hexo/categories/%E6%AF%94%E8%B3%BD/"/>
+    <category term="比賽" scheme="https://benedict-cs.github.io/hexo-en/categories/%E6%AF%94%E8%B3%BD/"/>
     
     
-    <category term="competition" scheme="https://benedict-cs.github.io/hexo/tags/competition/"/>
+    <category term="competition" scheme="https://benedict-cs.github.io/hexo-en/tags/competition/"/>
     
-    <category term="University" scheme="https://benedict-cs.github.io/hexo/tags/University/"/>
+    <category term="University" scheme="https://benedict-cs.github.io/hexo-en/tags/University/"/>
     
   </entry>
   
   <entry>
     <title>放視大賞 入圍跨域組</title>
-    <link href="https://benedict-cs.github.io/hexo/2023/11/10/shortlisted/"/>
-    <id>https://benedict-cs.github.io/hexo/2023/11/10/shortlisted/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2023/11/10/shortlisted/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2023/11/10/shortlisted/</id>
     <published>2023-11-09T22:40:12.000Z</published>
     <updated>2024-07-02T13:25:29.956Z</updated>
     
@@ -192,19 +192,19 @@
     
     
     
-    <category term="比賽" scheme="https://benedict-cs.github.io/hexo/categories/%E6%AF%94%E8%B3%BD/"/>
+    <category term="比賽" scheme="https://benedict-cs.github.io/hexo-en/categories/%E6%AF%94%E8%B3%BD/"/>
     
     
-    <category term="competition" scheme="https://benedict-cs.github.io/hexo/tags/competition/"/>
+    <category term="competition" scheme="https://benedict-cs.github.io/hexo-en/tags/competition/"/>
     
-    <category term="University" scheme="https://benedict-cs.github.io/hexo/tags/University/"/>
+    <category term="University" scheme="https://benedict-cs.github.io/hexo-en/tags/University/"/>
     
   </entry>
   
   <entry>
     <title>全國賽 - 技職盃黑客松 最佳簡報獎</title>
-    <link href="https://benedict-cs.github.io/hexo/2023/11/09/bestpresentation/"/>
-    <id>https://benedict-cs.github.io/hexo/2023/11/09/bestpresentation/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2023/11/09/bestpresentation/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2023/11/09/bestpresentation/</id>
     <published>2023-11-08T22:40:12.000Z</published>
     <updated>2024-07-02T13:18:27.660Z</updated>
     
@@ -225,19 +225,19 @@
     
     
     
-    <category term="比賽" scheme="https://benedict-cs.github.io/hexo/categories/%E6%AF%94%E8%B3%BD/"/>
+    <category term="比賽" scheme="https://benedict-cs.github.io/hexo-en/categories/%E6%AF%94%E8%B3%BD/"/>
     
     
-    <category term="competition" scheme="https://benedict-cs.github.io/hexo/tags/competition/"/>
+    <category term="competition" scheme="https://benedict-cs.github.io/hexo-en/tags/competition/"/>
     
-    <category term="University" scheme="https://benedict-cs.github.io/hexo/tags/University/"/>
+    <category term="University" scheme="https://benedict-cs.github.io/hexo-en/tags/University/"/>
     
   </entry>
   
   <entry>
     <title>分區賽 - 技職盃黑客松 最佳創造價值獎</title>
-    <link href="https://benedict-cs.github.io/hexo/2023/11/08/bestcreation/"/>
-    <id>https://benedict-cs.github.io/hexo/2023/11/08/bestcreation/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2023/11/08/bestcreation/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2023/11/08/bestcreation/</id>
     <published>2023-11-07T22:40:12.000Z</published>
     <updated>2024-07-02T13:15:27.939Z</updated>
     
@@ -258,19 +258,19 @@
     
     
     
-    <category term="比賽" scheme="https://benedict-cs.github.io/hexo/categories/%E6%AF%94%E8%B3%BD/"/>
+    <category term="比賽" scheme="https://benedict-cs.github.io/hexo-en/categories/%E6%AF%94%E8%B3%BD/"/>
     
     
-    <category term="competition" scheme="https://benedict-cs.github.io/hexo/tags/competition/"/>
+    <category term="competition" scheme="https://benedict-cs.github.io/hexo-en/tags/competition/"/>
     
-    <category term="University" scheme="https://benedict-cs.github.io/hexo/tags/University/"/>
+    <category term="University" scheme="https://benedict-cs.github.io/hexo-en/tags/University/"/>
     
   </entry>
   
   <entry>
     <title>全國賽 - 技職盃黑客松 評審團大獎 (冠軍)</title>
-    <link href="https://benedict-cs.github.io/hexo/2022/11/08/champion/"/>
-    <id>https://benedict-cs.github.io/hexo/2022/11/08/champion/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2022/11/08/champion/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2022/11/08/champion/</id>
     <published>2022-11-07T22:40:12.000Z</published>
     <updated>2024-07-02T13:08:10.937Z</updated>
     
@@ -291,19 +291,19 @@
     
     
     
-    <category term="比賽" scheme="https://benedict-cs.github.io/hexo/categories/%E6%AF%94%E8%B3%BD/"/>
+    <category term="比賽" scheme="https://benedict-cs.github.io/hexo-en/categories/%E6%AF%94%E8%B3%BD/"/>
     
     
-    <category term="competition" scheme="https://benedict-cs.github.io/hexo/tags/competition/"/>
+    <category term="competition" scheme="https://benedict-cs.github.io/hexo-en/tags/competition/"/>
     
-    <category term="University" scheme="https://benedict-cs.github.io/hexo/tags/University/"/>
+    <category term="University" scheme="https://benedict-cs.github.io/hexo-en/tags/University/"/>
     
   </entry>
   
   <entry>
     <title>分區賽 - 技職盃黑客松 最佳設計獎</title>
-    <link href="https://benedict-cs.github.io/hexo/2022/11/07/bestdesign/"/>
-    <id>https://benedict-cs.github.io/hexo/2022/11/07/bestdesign/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2022/11/07/bestdesign/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2022/11/07/bestdesign/</id>
     <published>2022-11-06T22:40:12.000Z</published>
     <updated>2024-07-01T12:45:55.418Z</updated>
     
@@ -324,19 +324,19 @@
     
     
     
-    <category term="比賽" scheme="https://benedict-cs.github.io/hexo/categories/%E6%AF%94%E8%B3%BD/"/>
+    <category term="比賽" scheme="https://benedict-cs.github.io/hexo-en/categories/%E6%AF%94%E8%B3%BD/"/>
     
     
-    <category term="competition" scheme="https://benedict-cs.github.io/hexo/tags/competition/"/>
+    <category term="competition" scheme="https://benedict-cs.github.io/hexo-en/tags/competition/"/>
     
-    <category term="University" scheme="https://benedict-cs.github.io/hexo/tags/University/"/>
+    <category term="University" scheme="https://benedict-cs.github.io/hexo-en/tags/University/"/>
     
   </entry>
   
   <entry>
     <title>全國賽 - Intel® DevCup x OpenVINO™ Toolkit 入圍</title>
-    <link href="https://benedict-cs.github.io/hexo/2021/11/07/intel/"/>
-    <id>https://benedict-cs.github.io/hexo/2021/11/07/intel/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2021/11/07/intel/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2021/11/07/intel/</id>
     <published>2021-11-06T22:40:12.000Z</published>
     <updated>2024-07-01T12:26:03.754Z</updated>
     
@@ -357,19 +357,19 @@
     
     
     
-    <category term="比賽" scheme="https://benedict-cs.github.io/hexo/categories/%E6%AF%94%E8%B3%BD/"/>
+    <category term="比賽" scheme="https://benedict-cs.github.io/hexo-en/categories/%E6%AF%94%E8%B3%BD/"/>
     
     
-    <category term="competition" scheme="https://benedict-cs.github.io/hexo/tags/competition/"/>
+    <category term="competition" scheme="https://benedict-cs.github.io/hexo-en/tags/competition/"/>
     
-    <category term="University" scheme="https://benedict-cs.github.io/hexo/tags/University/"/>
+    <category term="University" scheme="https://benedict-cs.github.io/hexo-en/tags/University/"/>
     
   </entry>
   
   <entry>
     <title>全國賽 - 5G通訊大賽 入圍</title>
-    <link href="https://benedict-cs.github.io/hexo/2021/11/06/mobilehero/"/>
-    <id>https://benedict-cs.github.io/hexo/2021/11/06/mobilehero/</id>
+    <link href="https://benedict-cs.github.io/hexo-en/2021/11/06/mobilehero/"/>
+    <id>https://benedict-cs.github.io/hexo-en/2021/11/06/mobilehero/</id>
     <published>2021-11-05T22:40:12.000Z</published>
     <updated>2024-07-01T12:25:55.034Z</updated>
     
@@ -391,12 +391,12 @@
     
     
     
-    <category term="比賽" scheme="https://benedict-cs.github.io/hexo/categories/%E6%AF%94%E8%B3%BD/"/>
+    <category term="比賽" scheme="https://benedict-cs.github.io/hexo-en/categories/%E6%AF%94%E8%B3%BD/"/>
     
     
-    <category term="competition" scheme="https://benedict-cs.github.io/hexo/tags/competition/"/>
+    <category term="competition" scheme="https://benedict-cs.github.io/hexo-en/tags/competition/"/>
     
-    <category term="University" scheme="https://benedict-cs.github.io/hexo/tags/University/"/>
+    <category term="University" scheme="https://benedict-cs.github.io/hexo-en/tags/University/"/>
     
   </entry>
   
