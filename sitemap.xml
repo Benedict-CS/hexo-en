@@ -29,60 +29,6 @@
   </url>
   
   <url>
-    <loc>https://benedict-cs.github.io/hexo-en/2023/11/12/university/</loc>
-    
-    <lastmod>2024-07-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://benedict-cs.github.io/hexo-en/2023/11/11/xrpotential/</loc>
-    
-    <lastmod>2024-07-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://benedict-cs.github.io/hexo-en/2023/11/10/shortlisted/</loc>
-    
-    <lastmod>2024-07-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://benedict-cs.github.io/hexo-en/2023/11/09/bestpresentation/</loc>
-    
-    <lastmod>2024-07-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://benedict-cs.github.io/hexo-en/2023/11/08/bestcreation/</loc>
-    
-    <lastmod>2024-07-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://benedict-cs.github.io/hexo-en/2022/11/08/champion/</loc>
-    
-    <lastmod>2024-07-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://benedict-cs.github.io/hexo-en/about/index.html</loc>
     
     <lastmod>2024-07-02</lastmod>
@@ -101,15 +47,6 @@
   </url>
   
   <url>
-    <loc>https://benedict-cs.github.io/hexo-en/2022/11/07/bestdesign/</loc>
-    
-    <lastmod>2024-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://benedict-cs.github.io/hexo-en/tags/index.html</loc>
     
     <lastmod>2024-07-01</lastmod>
@@ -120,24 +57,6 @@
   
   <url>
     <loc>https://benedict-cs.github.io/hexo-en/categories/index.html</loc>
-    
-    <lastmod>2024-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://benedict-cs.github.io/hexo-en/2021/11/07/intel/</loc>
-    
-    <lastmod>2024-07-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://benedict-cs.github.io/hexo-en/2021/11/06/mobilehero/</loc>
     
     <lastmod>2024-07-01</lastmod>
     
@@ -200,20 +119,6 @@
 
   
   <url>
-    <loc>https://benedict-cs.github.io/hexo-en/tags/competition/</loc>
-    <lastmod>2024-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://benedict-cs.github.io/hexo-en/tags/University/</loc>
-    <lastmod>2024-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://benedict-cs.github.io/hexo-en/tags/OS/</loc>
     <lastmod>2024-07-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -230,21 +135,7 @@
 
   
   <url>
-    <loc>https://benedict-cs.github.io/hexo-en/categories/%E6%AF%94%E8%B3%BD/</loc>
-    <lastmod>2024-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://benedict-cs.github.io/hexo-en/categories/OS/</loc>
-    <lastmod>2024-07-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://benedict-cs.github.io/hexo-en/categories/%E5%A4%A7%E5%AD%B8/</loc>
     <lastmod>2024-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
