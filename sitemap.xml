@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://benedict-cs.github.io/hexo-en/about/index.html</loc>
+    
+    <lastmod>2024-07-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://benedict-cs.github.io/hexo-en/home/index.html</loc>
     
     <lastmod>2024-07-03</lastmod>
@@ -32,15 +41,6 @@
     <loc>https://benedict-cs.github.io/hexo-en/2024/11/12/compile_linux_kernel/</loc>
     
     <lastmod>2024-07-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://benedict-cs.github.io/hexo-en/about/index.html</loc>
-    
-    <lastmod>2024-07-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://benedict-cs.github.io/hexo-en/lib/bookmark/package.json</loc>
+    <loc>https://benedict-cs.github.io/hexo-en/lib/bookmark/renovate.json</loc>
     
     <lastmod>2024-07-01</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://benedict-cs.github.io/hexo-en/lib/bookmark/renovate.json</loc>
+    <loc>https://benedict-cs.github.io/hexo-en/lib/bookmark/package.json</loc>
     
     <lastmod>2024-07-01</lastmod>
     

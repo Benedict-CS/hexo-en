@@ -288,6 +288,11 @@
       </tags>
   </entry>
   <entry>
+    <title>archives</title>
+    <url>/hexo-en/archives/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>about</title>
     <url>/hexo-en/about/index.html</url>
     <content><![CDATA[<head>
@@ -474,18 +479,18 @@
 <div class="profile-container">
     <img data-src="../images/me.jpg" alt="profile" style="border-radius: 50%; width: 150px; height: 150px;" />
     <div>
-        <div class="profile-name">張 永 義</div>
-        <a class="profile-link" href="https://benedict.nycu.me/CV.pdf" target="_blank"><b>簡歷</b></a>
+        <div class="profile-name">Benedict Tiong</div>
+        <a class="profile-link" href="https://benedict.nycu.me/CV.pdf" target="_blank"><b>CV</b></a>
     </div>
 </div>
 
 <div class="timeline">
     <div class="timeline-entry2">
-        <div class="timeline-title2">關於</div>
+        <div class="timeline-title2">About</div>
     </div>
     <div class="timeline-entry-none">
         <div>
-            <div>大家好，我是來自馬來西亞的張永義，現在在國立陽明交通大學 - 資訊科學與工程研究所進修中...</div>
+            <div>I am Benedict Tiong from Malaysia, Master's student in Computer Science at National Yang-Ming Chiao Tung University, deeply engaged in the study of Microservices, CI/CD, DevOps, and Cloud Native Technologies.</div>
         </div>
     </div>
 </div>
@@ -493,36 +498,36 @@
 
 <div class="timeline">
     <div class="timeline-entry2">
-        <div class="timeline-title2">研究領域</div>
+        <div class="timeline-title2">Reseacrh Interests</div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
-            <div class="timeline-title4">各種網路架構 (Linux Networking, SDN, NFV)</div>
+            <div class="timeline-title4">Network Architecture (Linux Networking, SDN, NFV)</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
-            <div class="timeline-title4">雲原生相關技術 (Kubernetes, CI/CD, DevOps)</div>
+            <div class="timeline-title4">Cloud Native Technology (Kubernetes, CI/CD, DevOps)</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content-last">
-            <div class="timeline-title4">容器化平台技術 (Docker)</div>
+            <div class="timeline-title4">Containerize Technology (Docker)</div>
         </div>
     </div>
 </div>
 
 <div class="timeline">
     <div class="timeline-entry2">
-        <div class="timeline-title2">學歷</div>
+        <div class="timeline-title2">Education</div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
             <img class="timeline-logo" data-src="../images/logo/nycu_logo.png" alt="NYCU Logo" width="70px" />
             <div class="margin-left">
-                <div class="timeline-title">資訊科學與工程研究所 (GPA: 4.15/4.30)</div>
-                <div class="timeline-subtitle">國立陽明交通大學, 台灣</div>
-                <div class="timeline-subtitle2">理工碩士 . <span class="timeline-date">2023 - Now</span></div>
+                <div class="timeline-title">Department of Computer Science (GPA: 4.15/4.30)</div>
+                <div class="timeline-subtitle">National Yang Ming Chiao Tung University, Taiwan</div>
+                <div class="timeline-subtitle2">Master (MSc.) . <span class="timeline-date">2023 - Now</span></div>
             </div>
         </div>
     </div>
@@ -530,9 +535,9 @@
         <div class="timeline-content">
             <img class="timeline-logo" data-src="../images/logo/ntut_logo.png" alt="Taipei Tech Logo" width="70px" />
             <div class="margin-left">
-                <div class="timeline-title">互動設計系 媒體組 (GPA: 3.99/4.00 & 系排: 2/82)</div>
-                <div class="timeline-subtitle">國立臺北科技大學, 台灣</div>
-                <div class="timeline-subtitle2">理工學士 . <span class="timeline-date">2019 - 2023</span></div>
+                <div class="timeline-title">Department of Interaction Design (GPA: 3.99/4.00)</div>
+                <div class="timeline-subtitle">National Taipei University of Technology, Taiwan</div>
+                <div class="timeline-subtitle2">Bachelor (BSc.) . <span class="timeline-date">2019 - 2023</span></div>
             </div>
         </div>
     </div>
@@ -540,9 +545,9 @@
         <div class="timeline-content-last">
             <img class="timeline-logo" data-src="../images/logo/smk_logo.jpg" alt="School Logo" width="58px" />
             <div class="margin-left">
-                <div class="timeline-title">普通高中 (班排: 1/31)</div>
+                <div class="timeline-title">Normal High School (Class Rank: 1/31)</div>
                 <div class="timeline-subtitle">Sekolah Menengah Kebangsaan Tatau, 馬來西亞</div>
-                <div class="timeline-subtitle2">普通高中 . <span class="timeline-date">2014 - 2018</span></div>
+                <div class="timeline-subtitle2">High School . <span class="timeline-date">2014 - 2018</span></div>
             </div>
         </div>
     </div>
@@ -550,15 +555,15 @@
 
 <div class="timeline">
     <div class="timeline-entry2">
-        <div class="timeline-title2">工作經歷</div>
+        <div class="timeline-title2">Work Experiences</div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
             <img class="timeline-logo" data-src="../images/logo/nycu_logo.png" alt="NYCU Logo" width="70px" />
             <div class="margin-left">
-                <div class="timeline-title">軟體定義網路及網路功能虛擬化助教</div>
-                <div class="timeline-subtitle">國立陽明交通大學, 資訊科學與工程研究所</div>
-                <div class="timeline-subtitle2">工讀 . <span class="timeline-date">2023/08~2024/01</span> . 6個月</div>
+                <div class="timeline-title">SDN&NFV Teaching Assistant</div>
+                <div class="timeline-subtitle">Department of Computer Science, NYCU</div>
+                <div class="timeline-subtitle2">Part-time . <span class="timeline-date">2023/08~2024/01</span> . 6mos</div>
             </div>
         </div>
     </div>
@@ -566,9 +571,9 @@
         <div class="timeline-content">
             <img class="timeline-logo" data-src="../images/logo/makalot_logo.jpg" alt="Company Logo" width="63px" />
             <div class="margin-left">
-                <div class="timeline-title">軟體開發工程師</div>
-                <div class="timeline-subtitle">聚陽實業股份有限公司, 資訊處應用開發部</div>
-                <div class="timeline-subtitle2">實習 . <span class="timeline-date">2022/07~2023/06</span> . 1年</div>
+                <div class="timeline-title">Software Engineer</div>
+                <div class="timeline-subtitle">IT Department, Makalot Industrial Co., Ltd.</div>
+                <div class="timeline-subtitle2">Internship  . <span class="timeline-date">2022/07~2023/06</span> . 1yr</div>
             </div>
         </div>
     </div>
@@ -576,9 +581,9 @@
         <div class="timeline-content">
             <img class="timeline-logo" data-src="../images/logo/ntut_logo.png" alt="Taipei Tech Logo" width="70px" />
             <div class="margin-left">
-                <div class="timeline-title">行政助理</div>
-                <div class="timeline-subtitle">國立臺北科技大學, 計算機與網路中心</div>
-                <div class="timeline-subtitle2">工讀 . <span class="timeline-date">2021/06~2023/06</span> . 2年</div>
+                <div class="timeline-title">Administration Assistant</div>
+                <div class="timeline-subtitle">Computer and Network Center, NTUT</div>
+                <div class="timeline-subtitle2">Part-time . <span class="timeline-date">2021/06~2023/06</span> . 2yrs</div>
             </div>
         </div>
     </div>
@@ -586,9 +591,9 @@
         <div class="timeline-content-last">
             <img class="timeline-logo" data-src="../images/logo/must_logo.png" alt="Mingxin Logo" width="70px" />
             <div class="margin-left">
-                <div class="timeline-title">專案開發工程師</div>
-                <div class="timeline-subtitle">明新科技大學, 多媒體與遊戲發展系</div>
-                <div class="timeline-subtitle2">接案 . <span class="timeline-date">2022/01~2022/06</span> . 6個月</div>
+                <div class="timeline-title">Project Engineer</div>
+                <div class="timeline-subtitle">Department of Multimedia and Game Development, MUST</div>
+                <div class="timeline-subtitle2">Part-time . <span class="timeline-date">2022/01~2022/06</span> . 6mos</div>
             </div>
         </div>
     </div>
@@ -596,13 +601,13 @@
 
 <div class="timeline">
     <div class="timeline-entry2">
-        <div class="timeline-title2">競賽成就</div>
+        <div class="timeline-title2">Awards</div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
             <div class="timeline-logo2">2023</div>
             <div class="timeline-title4">
-                全國賽 放視大賞 - 榮獲 XR社會公益發展潛力獎 . <a class="profile-link2" target="_blank" href="https://news.ntut.edu.tw/p/406-1000-129024,r1492.php"><u class="small">新聞</u></a>
+                Potential Award of XR Social Welfare Development in Vision Get Wild . <a class="profile-link2" target="_blank" href="https://news.ntut.edu.tw/p/406-1000-129024,r1492.php"><u class="small">News</u></a>
             </div>
         </div>
     </div>
@@ -610,7 +615,7 @@
         <div class="timeline-content">
             <div class="timeline-logo2">2023</div>
             <div class="timeline-title4">
-                全國賽 放視大賞 - 榮獲 入圍跨域組 . <a class="profile-link2" target="_blank" href="https://www.1111.com.tw/news/jobns/151351"><u class="small">新聞</u></a>
+                Shortlisted Cross-Disciplinary category in Vision Get Wild . <a class="profile-link2" target="_blank" href="https://www.1111.com.tw/news/jobns/151351"><u class="small">News</u></a>
             </div>
         </div>
     </div>
@@ -618,8 +623,8 @@
         <div class="timeline-content">
             <div class="timeline-logo2">2023</div>
             <div class="timeline-title4">
-                全國賽 技職盃黑客松 - 榮獲 最佳簡報獎 .
-                <a class="profile-link2" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=pfbid07ZVz1cMYizifQphwpuUQfC3Gt5uwUSD4tPuo3MehWgo31bNnZaUmdJGZdit9wDhgl&id=100003780215925"><u class="small">貼文</u></a>
+                Best Presentation Award in Makerthon National Tournament .
+                <a class="profile-link2" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=pfbid07ZVz1cMYizifQphwpuUQfC3Gt5uwUSD4tPuo3MehWgo31bNnZaUmdJGZdit9wDhgl&id=100003780215925"><u class="small">Post</u></a>
             </div>
         </div>
     </div>
@@ -627,47 +632,47 @@
         <div class="timeline-content">
             <div class="timeline-logo2">2023</div>
             <div class="timeline-title4">
-                分區賽 技職盃黑客松 - 榮獲 最佳創造價值獎 .
-                <a class="profile-link2" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=pfbid07ZVz1cMYizifQphwpuUQfC3Gt5uwUSD4tPuo3MehWgo31bNnZaUmdJGZdit9wDhgl&id=100003780215925"><u class="small">貼文</u></a>
+                Best Value Creation Award in Makerthon Regional Tournament .
+                <a class="profile-link2" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=pfbid07ZVz1cMYizifQphwpuUQfC3Gt5uwUSD4tPuo3MehWgo31bNnZaUmdJGZdit9wDhgl&id=100003780215925"><u class="small">Post</u></a>
             </div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
-            <div class="timeline-logo2">2023</div>
+            <div class="timeline-logo2">2022</div>
             <div class="timeline-title4">
-                全國賽 技職盃黑客松 - 榮獲 評審團大獎 (冠軍) .
+                Jury Prize (Champion) in Makerthon National Tournament .
                 <a
                     class="profile-link2"
                     target="_blank"
                     href="https://tw.news.yahoo.com/2022%E9%BB%91%E5%AE%A2%E6%9D%BE-%E6%8A%80%E8%81%B7%E7%9B%83%E5%85%A8%E5%9C%8B%E5%A4%A7%E8%B3%BD-%E7%B8%BD%E6%B1%BA%E8%B3%BD-%E5%8C%97%E7%A7%91%E5%A4%A7%E7%8D%B2-%E8%A9%95%E5%AF%A9%E5%9C%98%E5%A4%A7%E7%8D%8E-093007126.html"
                 >
-                    <u class="small">新聞</u>
+                    <u class="small">News</u>
                 </a>
             </div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
-            <div class="timeline-logo2">2023</div>
+            <div class="timeline-logo2">2022</div>
             <div class="timeline-title4">
-                分區賽 技職盃黑客松 - 榮獲 最佳設計獎 . <a class="profile-link2" target="_blank" href="https://www.facebook.com/photo/?fbid=362414349248649&set=a.351730486983702"><u class="small">貼文</u></a>
+                Best Design Award in Makerthon Regional Tournament . <a class="profile-link2" target="_blank" href="https://www.facebook.com/photo/?fbid=362414349248649&set=a.351730486983702"><u class="small">Post</u></a>
             </div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
-            <div class="timeline-logo2">2023</div>
+            <div class="timeline-logo2">2021</div>
             <div class="timeline-title4">
-                全國賽 5G通訊大賽 - 榮獲 入圍數位娛樂組 . <a class="profile-link2" target="_blank" href="https://www.ideas-hatch.com/evb_share_detail.jsp?id=26"><u class="small">作品</u></a>
+                Shortlisted Digital Entertainment category in 5G Mobliehero . <a class="profile-link2" target="_blank" href="https://www.ideas-hatch.com/evb_share_detail.jsp?id=26"><u class="small">Project</u></a>
             </div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content-last">
-            <div class="timeline-logo2">2023</div>
+            <div class="timeline-logo2">2021</div>
             <div class="timeline-title4">
-                全國賽 Intel® DevCup x OpenVINO™ Toolkit - 榮獲 入圍AI競賽 . <a class="profile-link2" target="_blank" href="https://makerpro.cc/intel-devcup/tidy"><u class="small">作品</u></a>
+                Shortlisted AI Experiment in Intel® DevCup x OpenVINO™ Toolkit . <a class="profile-link2" target="_blank" href="https://makerpro.cc/intel-devcup/tidy"><u class="small">Project</u></a>
             </div>
         </div>
     </div>
@@ -675,95 +680,95 @@
 
 <div class="timeline">
     <div class="timeline-entry2">
-        <div class="timeline-title2">獎學金</div>
+        <div class="timeline-title2">Scholoarships</div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
-            <div class="timeline-title5">國立陽明交通大學</div>
+            <div class="timeline-title5">National Yang Ming Chiao Tung University</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
             <div class="timeline-logo2">2024</div>
-            <div class="timeline-title4">全校 研究所優秀僑生獎學金 (GPA: 4.15/4.30)</div>
+            <div class="timeline-title4">Distinguished Overseas Chinese Student Scholarship (GPA: 4.15/4.30)</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
-            <div class="timeline-title5">國立臺北科技大學</div>
+            <div class="timeline-title5">National Taipei University of Technology</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
-            <div class="timeline-logo2">2023</div>
-            <div class="timeline-title4">互動設計系 108-1 書卷獎 (GPA: 4.0/4.0)</div>
+            <div class="timeline-logo2">2019</div>
+            <div class="timeline-title4">Presidential Award (GPA: 4.00/4.00) - 2019 Fall Semester</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
-            <div class="timeline-logo2">2023</div>
-            <div class="timeline-title4">互動設計系 108-2 書卷獎 (GPA: 4.0/4.0)</div>
+            <div class="timeline-logo2">2020</div>
+            <div class="timeline-title4">Presidential Award (GPA: 4.00/4.00) - 2020 Spring Semester</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
-            <div class="timeline-logo2">2023</div>
-            <div class="timeline-title4">互動設計系 109-2 書卷獎 (GPA: 4.0/4.0)</div>
-        </div>
-    </div>
-    <div class="timeline-entry">
-        <div class="timeline-content">
-            <div class="timeline-logo2">2023</div>
-            <div class="timeline-title4">互動設計系 畢業成績優良獎 (系排二 2/82)</div>
+            <div class="timeline-logo2">2021</div>
+            <div class="timeline-title4">Presidential Award (GPA: 4.00/4.00) - 2021 Spring Semester</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
             <div class="timeline-logo2">2023</div>
-            <div class="timeline-title4">全校 品學兼優畢業僑生委員長獎 (全校僅一名)</div>
+            <div class="timeline-title4">Outstanding Graduation Grade Award (Department Ranking: 2/82)</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
             <div class="timeline-logo2">2023</div>
-            <div class="timeline-title4">全校 109-1 學行優良僑生獎學金</div>
+            <div class="timeline-title4">Most Excellent Overseas Chinese Student Graduate Award</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
             <div class="timeline-logo2">2023</div>
-            <div class="timeline-title4">全校 111-2 學行優良僑生獎學金</div>
+            <div class="timeline-title4">Distinguished Overseas Chinese Student Scholarship</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2022</div>
+            <div class="timeline-title4">Distinguished Overseas Chinese Student Scholarship</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2020</div>
+            <div class="timeline-title4">Distinguished Overseas Chinese Student Scholarship</div>
+        </div>
+    </div>
+    <div class="timeline-entry">
+        <div class="timeline-content">
+            <div class="timeline-logo2">2022</div>
+            <div class="timeline-title4">Academic Competion Excellence Award - 2022 Fall Semester</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
             <div class="timeline-logo2">2023</div>
-            <div class="timeline-title4">全校 112-2 學行優良僑生獎學金</div>
-        </div>
-    </div>
-    <div class="timeline-entry">
-        <div class="timeline-content">
-            <div class="timeline-logo2">2023</div>
-            <div class="timeline-title4">全校 111-1 學術性競賽成績優良獎金</div>
-        </div>
-    </div>
-    <div class="timeline-entry">
-        <div class="timeline-content">
-            <div class="timeline-logo2">2023</div>
-            <div class="timeline-title4">全校 111-2 學術性競賽成績優良獎金</div>
+            <div class="timeline-title4">Academic Competion Excellence Award - 2023 Spring Semester</div>
         </div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content-last">
             <div class="timeline-logo2">2023</div>
-            <div class="timeline-title4">全校 112-2 學術性競賽成績優良獎金</div>
+            <div class="timeline-title4">Academic Competion Excellence Award - 2023 Fall Semester</div>
         </div>
     </div>
 </div>
 
 <div class="timeline">
     <div class="timeline-entry2">
-        <div class="timeline-title2">聯絡我</div>
+        <div class="timeline-title2">Contact</div>
     </div>
     <div class="timeline-entry">
         <div class="timeline-content">
@@ -787,18 +792,13 @@
 ]]></content>
   </entry>
   <entry>
-    <title>archives</title>
-    <url>/hexo-en/archives/index.html</url>
+    <title>Home</title>
+    <url>/hexo-en/home/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>categories</title>
     <url>/hexo-en/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Home</title>
-    <url>/hexo-en/home/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -842,6 +842,11 @@
     <title>tags</title>
     <url>/hexo-en/tags/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/hexo-en/lib/bookmark/bookmark.min.js</url>
+    <content><![CDATA[!function(o){"use strict";var n=o.localStorage;null==n&&(n={getItem:function(){return null},setItem:function(){},removeItem:function(){},clear:function(){}});var t,e=function(){var o=n.getItem("bookmark");if(null==o)return null;try{return JSON.parse(o)}catch(o){return null}},a=function(){var n=o.document.createElement("style");n.type="text/css";var e=".book-mark-link{border-bottom:none;display:block;position:fixed;color:#222;font-size:26px !important;top:-10px;left:20px;transition:.3s;}.book-mark-link:hover,.book-mark-link-fixed{top:-2px}@media(max-width:1090px){.book-mark-link{display:none}}";e=o.document.createTextNode(e),n.appendChild(e),o.document.head.appendChild(n),t=$('<a class="book-mark-link book-mark-link-fixed fa fa-bookmark" href="#"></a>'),$(o.document.body).append(t);var a=0;$(o).on("scroll.bookmark",function(){var n=o.document.documentElement.scrollTop;n>0?0===a&&(t.removeClass("book-mark-link-fixed"),a=n):a>0&&(!t.hasClass("book-mark-link-fixed")&&t.addClass("book-mark-link-fixed"),a=0)})},r=function(e,a){null==a&&(a={});var r=o.document.documentElement.scrollTop;return a.lastUri=e,a[e]=r,n.setItem("bookmark",JSON.stringify(a)),t.animate({top:-26},"fast",function(){setTimeout(function(){t.css("top","")},400)}),a};o.bookmark={loadBookmark:function(){var o=e();null!=o&&$(function(){a(),t.attr("href",o.lastUri+"#book:mark")})},scrollToMark:function(n,l){var i=o.location.pathname,c=e();$(function(){var e;a(),t.click(function(){return c=r(i,c),!1}),"auto"===n&&o.addEventListener("beforeunload",function(){r(i,c)}),null!=c&&([l,"#comments"].filter(function(n){return n===o.location.hash}).length>0||(e=c[i],isNaN(e)||$(function(){$(o.document.documentElement).animate({scrollTop:e},"fast")})))})}}}(window);]]></content>
   </entry>
   <entry>
     <title></title>
@@ -997,16 +1002,6 @@
   };
 })(window);
 ]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/hexo-en/lib/bookmark/bookmark.min.js</url>
-    <content><![CDATA[!function(o){"use strict";var n=o.localStorage;null==n&&(n={getItem:function(){return null},setItem:function(){},removeItem:function(){},clear:function(){}});var t,e=function(){var o=n.getItem("bookmark");if(null==o)return null;try{return JSON.parse(o)}catch(o){return null}},a=function(){var n=o.document.createElement("style");n.type="text/css";var e=".book-mark-link{border-bottom:none;display:block;position:fixed;color:#222;font-size:26px !important;top:-10px;left:20px;transition:.3s;}.book-mark-link:hover,.book-mark-link-fixed{top:-2px}@media(max-width:1090px){.book-mark-link{display:none}}";e=o.document.createTextNode(e),n.appendChild(e),o.document.head.appendChild(n),t=$('<a class="book-mark-link book-mark-link-fixed fa fa-bookmark" href="#"></a>'),$(o.document.body).append(t);var a=0;$(o).on("scroll.bookmark",function(){var n=o.document.documentElement.scrollTop;n>0?0===a&&(t.removeClass("book-mark-link-fixed"),a=n):a>0&&(!t.hasClass("book-mark-link-fixed")&&t.addClass("book-mark-link-fixed"),a=0)})},r=function(e,a){null==a&&(a={});var r=o.document.documentElement.scrollTop;return a.lastUri=e,a[e]=r,n.setItem("bookmark",JSON.stringify(a)),t.animate({top:-26},"fast",function(){setTimeout(function(){t.css("top","")},400)}),a};o.bookmark={loadBookmark:function(){var o=e();null!=o&&$(function(){a(),t.attr("href",o.lastUri+"#book:mark")})},scrollToMark:function(n,l){var i=o.location.pathname,c=e();$(function(){var e;a(),t.click(function(){return c=r(i,c),!1}),"auto"===n&&o.addEventListener("beforeunload",function(){r(i,c)}),null!=c&&([l,"#comments"].filter(function(n){return n===o.location.hash}).length>0||(e=c[i],isNaN(e)||$(function(){$(o.document.documentElement).animate({scrollTop:e},"fast")})))})}}}(window);]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/hexo-en/lib/bookmark/package.json</url>
-    <content><![CDATA[{"name":"theme-next-bookmark","version":"1.0.2","description":"A plugin of local-bookmarks for NexT theme.","main":"index.js","scripts":{"test":"eslint index.js","dist":"eslint index.js && uglifyjs --compress --mangle -o bookmark.min.js -- index.js"},"repository":{"type":"git","url":"git+https://github.com/theme-next/theme-next-bookmark.git"},"keywords":["hexo","theme-next","plugin","bookmark"],"author":"Tsanie Lily","license":"MIT","bugs":{"url":"https://github.com/theme-next/theme-next-bookmark/issues"},"homepage":"https://github.com/theme-next/theme-next-bookmark#readme","devDependencies":{"eslint":"^4.17.0","eslint-config-google":"^0.9.1","uglify-js":"^3.3.10"}}]]></content>
   </entry>
   <entry>
     <title></title>
@@ -1949,6 +1944,11 @@
         max-width: calc(100% - 10px);
     }
 }]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/hexo-en/lib/bookmark/package.json</url>
+    <content><![CDATA[{"name":"theme-next-bookmark","version":"1.0.2","description":"A plugin of local-bookmarks for NexT theme.","main":"index.js","scripts":{"test":"eslint index.js","dist":"eslint index.js && uglifyjs --compress --mangle -o bookmark.min.js -- index.js"},"repository":{"type":"git","url":"git+https://github.com/theme-next/theme-next-bookmark.git"},"keywords":["hexo","theme-next","plugin","bookmark"],"author":"Tsanie Lily","license":"MIT","bugs":{"url":"https://github.com/theme-next/theme-next-bookmark/issues"},"homepage":"https://github.com/theme-next/theme-next-bookmark#readme","devDependencies":{"eslint":"^4.17.0","eslint-config-google":"^0.9.1","uglify-js":"^3.3.10"}}]]></content>
   </entry>
   <entry>
     <title></title>
