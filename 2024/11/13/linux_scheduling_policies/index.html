@@ -32,16 +32,16 @@
 <meta property="og:site_name" content="Benedict">
 <meta property="og:description" content="Assignment 2: Implement a program to apply different scheduling policies on created threads Linux Scheduling Policy SCHED_FIFO   Requirements Main thread Worker Thread      Implement a program to app">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://hackmd.io/_uploads/Hkqsva3Va.png">
-<meta property="og:image" content="https://hackmd.io/_uploads/B14by9eNT.png">
-<meta property="og:image" content="https://hackmd.io/_uploads/Hyw8j9xE6.png">
+<meta property="og:image" content="https://benedict-cs.github.io/hexo/images/OS_2/OS_1.png">
+<meta property="og:image" content="https://benedict-cs.github.io/hexo/images/OS_2/OS_2.png">
+<meta property="og:image" content="https://benedict-cs.github.io/hexo/images/OS_2/OS_3.png">
 <meta property="article:published_time" content="2024-11-12T22:40:12.000Z">
-<meta property="article:modified_time" content="2024-07-02T14:41:36.445Z">
+<meta property="article:modified_time" content="2024-07-03T03:38:15.071Z">
 <meta property="article:author" content="Benedict">
 <meta property="article:tag" content="OS">
 <meta property="article:tag" content="Linux Kernel">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://hackmd.io/_uploads/Hkqsva3Va.png">
+<meta name="twitter:image" content="https://benedict-cs.github.io/hexo/images/OS_2/OS_1.png">
 
 
 <link rel="canonical" href="https://benedict-cs.github.io/hexo/2024/11/13/linux_scheduling_policies/">
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const langSwitch = document.getElementById('switch-lang');
   if (langSwitch) {
     langSwitch.addEventListener('click', function () {
-      window.location.href = "https://benedict.nycu.me/en/index.html"; // Redirect to the new URL
+      window.location.href = "https://benedict-cs.github.io/hexo/"; // Redirect to the new URL
     });
   }
 });
@@ -371,13 +371,19 @@ document.addEventListener('DOMContentLoaded', function () {
 <p><strong>Test the program</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./sched_test.sh ./sched_demo ./sched_demo_312551002</span><br></pre></td></tr></table></figure>
 
-<p><strong>Screenshot of test result:</strong><br><img data-src="https://hackmd.io/_uploads/Hkqsva3Va.png" alt="image"></p>
-<h3 id="Q2-Describe-the-results-of-sched-demo-n-3-t-1-0-s-NORMAL-FIFO-FIFO-p-1-10-30-and-what-causes-that"><a href="#Q2-Describe-the-results-of-sched-demo-n-3-t-1-0-s-NORMAL-FIFO-FIFO-p-1-10-30-and-what-causes-that" class="headerlink" title="Q2: Describe the results of .&#x2F;sched_demo -n 3 -t 1.0 -s NORMAL,FIFO,FIFO -p -1,10,30 and what causes that."></a>Q2: Describe the results of .&#x2F;sched_demo -n 3 -t 1.0 -s NORMAL,FIFO,FIFO -p -1,10,30 and what causes that.</h3><p><img data-src="https://hackmd.io/_uploads/B14by9eNT.png" alt="image"></p>
+<p><strong>Screenshot of test result:</strong><br>   <div><br>                                                <img alt="張永義 競賽圖片" data-src="/hexo/images/OS_2/OS_1.png" /><br>                                            </div></p>
+<h3 id="Q2-Describe-the-results-of-sched-demo-n-3-t-1-0-s-NORMAL-FIFO-FIFO-p-1-10-30-and-what-causes-that"><a href="#Q2-Describe-the-results-of-sched-demo-n-3-t-1-0-s-NORMAL-FIFO-FIFO-p-1-10-30-and-what-causes-that" class="headerlink" title="Q2: Describe the results of .&#x2F;sched_demo -n 3 -t 1.0 -s NORMAL,FIFO,FIFO -p -1,10,30 and what causes that."></a>Q2: Describe the results of .&#x2F;sched_demo -n 3 -t 1.0 -s NORMAL,FIFO,FIFO -p -1,10,30 and what causes that.</h3>   <div>
+                                                <img alt="張永義 競賽圖片" data-src="/hexo/images/OS_2/OS_2.png" />
+                                            </div>
+
 <ul>
 <li><strong>CFS and NORMAL Policy:</strong> Thread 0 and Thread 2, which are both scheduled under the NORMAL policy, are managed by the CFS. This ensures they receive fair CPU time slices. Despite their lower priority compared to the FIFO threads, CFS allocates them CPU time in a manner that prevents starvation and ensures fair allocation. This is why these threads are scheduled intermittently even amidst the higher priority FIFO threads.</li>
 <li><strong>FIFO Policy and Preemption:</strong> Threads 1 and 3, scheduled under the FIFO policy, are expected to run based on their priority levels. Thread 3, with the highest priority (30), should theoretically preempt other threads and run to completion first. However, the interleaved scheduling of Thread 0 and Thread 2 indicates that CFS intervention allows these NORMAL policy threads to receive CPU time, thus not strictly adhering to FIFO priorities.</li>
 </ul>
-<h3 id="Q3-Describe-the-results-of-sched-demo-n-4-t-0-5-s-NORMAL-FIFO-NORMAL-FIFO-p-1-10-1-30-and-what-causes-that"><a href="#Q3-Describe-the-results-of-sched-demo-n-4-t-0-5-s-NORMAL-FIFO-NORMAL-FIFO-p-1-10-1-30-and-what-causes-that" class="headerlink" title="Q3: Describe the results of .&#x2F;sched_demo -n 4 -t 0.5 -s NORMAL,FIFO,NORMAL,FIFO -p -1,10,-1,30, and what causes that."></a>Q3: Describe the results of .&#x2F;sched_demo -n 4 -t 0.5 -s NORMAL,FIFO,NORMAL,FIFO -p -1,10,-1,30, and what causes that.</h3><p><img data-src="https://hackmd.io/_uploads/Hyw8j9xE6.png" alt="image"></p>
+<h3 id="Q3-Describe-the-results-of-sched-demo-n-4-t-0-5-s-NORMAL-FIFO-NORMAL-FIFO-p-1-10-1-30-and-what-causes-that"><a href="#Q3-Describe-the-results-of-sched-demo-n-4-t-0-5-s-NORMAL-FIFO-NORMAL-FIFO-p-1-10-1-30-and-what-causes-that" class="headerlink" title="Q3: Describe the results of .&#x2F;sched_demo -n 4 -t 0.5 -s NORMAL,FIFO,NORMAL,FIFO -p -1,10,-1,30, and what causes that."></a>Q3: Describe the results of .&#x2F;sched_demo -n 4 -t 0.5 -s NORMAL,FIFO,NORMAL,FIFO -p -1,10,-1,30, and what causes that.</h3>   <div>
+                                                <img alt="張永義 競賽圖片" data-src="/hexo/images/OS_2/OS_3.png" />
+                                            </div>
+
 <ul>
 <li><strong>CFS and NORMAL Policy:</strong> Although Thread 0 and Thread 2 have a NORMAL scheduling policy, the CFS ensures they both receive a fair portion of CPU time. CFS is designed to equitably distribute CPU time slices and does not allow real-time processes to completely overshadow regular ones. This design accounts for why Threads 0 and 2 are scheduled intermittently, even though there are FIFO threads with higher priorities running.</li>
 <li><strong>FIFO Policy and Preemption:</strong> For FIFO threads such as Thread 1 and Thread 3, the scheduling is based on their priority levels. Thread 3, with the highest priority (30), should, in a perfect FIFO system, run to completion before Thread 1, which has a lower priority (10), begins. However, the interleaving of Thread 0 and Thread 2 suggests that CFS is providing time slices to NORMAL policy threads, thereby not strictly adhering to FIFO priority rules.</li>
@@ -424,7 +430,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 <script src="https://utteranc.es/client.js"
-        repo="https://github.com/Benedict-CS/hexo"
+        repo="https://github.com/Benedict-CS/hexo-en"
         issue-term="pathname"
         theme="github-dark"
         crossorigin="anonymous"
@@ -537,7 +543,7 @@ margin-left:-10px;
 
 
 
-<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Benedict-CS/hexo","issue_term":"title","theme":"github-light"}</script>
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Benedict-CS/hexo-en","issue_term":"title","theme":"github-light"}</script>
 <script src="/hexo/js/third-party/comments/utterances.js"></script>
 
 </body>

@@ -32,16 +32,16 @@
 <meta property="og:site_name" content="Benedict">
 <meta property="og:description" content="Assignment 1: Compiling Linux Kernel and Adding Custom System Calls Compiling Linux Kernel Change kernel suffix   Adding custom system calls sys_hello sys_revstr      Part 1: Compiling Linux Kernel &amp;">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://hackmd.io/_uploads/BJCXNUAQ6.png">
-<meta property="og:image" content="https://hackmd.io/_uploads/HJUIE4R7a.png">
-<meta property="og:image" content="https://hackmd.io/_uploads/ByrOVERma.png">
+<meta property="og:image" content="https://benedict-cs.github.io/hexo/images/OS_1/OS_1.png">
+<meta property="og:image" content="https://benedict-cs.github.io/hexo/images/OS_1/OS_2.jpg">
+<meta property="og:image" content="https://benedict-cs.github.io/hexo/images/OS_1/OS_3.png">
 <meta property="article:published_time" content="2024-11-11T22:40:12.000Z">
-<meta property="article:modified_time" content="2024-07-02T14:42:52.883Z">
+<meta property="article:modified_time" content="2024-07-03T03:36:46.895Z">
 <meta property="article:author" content="Benedict">
 <meta property="article:tag" content="OS">
 <meta property="article:tag" content="Linux Kernel">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://hackmd.io/_uploads/BJCXNUAQ6.png">
+<meta name="twitter:image" content="https://benedict-cs.github.io/hexo/images/OS_1/OS_1.png">
 
 
 <link rel="canonical" href="https://benedict-cs.github.io/hexo/2024/11/12/compile_linux_kernel/">
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const langSwitch = document.getElementById('switch-lang');
   if (langSwitch) {
     langSwitch.addEventListener('click', function () {
-      window.location.href = "https://benedict.nycu.me/en/index.html"; // Redirect to the new URL
+      window.location.href = "https://benedict-cs.github.io/hexo/"; // Redirect to the new URL
     });
   }
 });
@@ -348,7 +348,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <p>Press <strong>Esc</strong> button when system boot &gt; Advanced options for Ubuntu &gt; choose <code>Linux 5.19.12-os-312551002</code> to start</p>
 <p><strong>Step 9: Check the running kernel version</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -a</span><br></pre></td></tr></table></figure>
-<p><strong>The screenshot of changed kernel suffix</strong><br><img data-src="https://hackmd.io/_uploads/BJCXNUAQ6.png" alt="image"></p>
+<p><strong>The screenshot of changed kernel suffix</strong><br>       <div><br>                                            <img alt="張永義 競賽圖片" data-src="/hexo/images/OS_1/OS_1.png" /><br>                                        </div></p>
 <h2 id="Part-2-Adding-custom-system-calls"><a href="#Part-2-Adding-custom-system-calls" class="headerlink" title="Part 2: Adding custom system calls"></a>Part 2: Adding custom system calls</h2><h3 id="sys-hello"><a href="#sys-hello" class="headerlink" title="sys_hello"></a><code>sys_hello</code></h3><p>For the implementation of the sys_hello system calls, I <font color="#f00">modified 4 kernel source files</font> and <font color="#f00">added 1 new C code</font> to verify if the system calls work correctly. The modified and added files are:</p>
 <ol>
 <li>linux-5.19.12&#x2F;kernel&#x2F;<font color="#f00">sys.c</font></li>
@@ -379,7 +379,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <p><strong>Step 10: Display the output messages produced by the sys_hello system call.</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dmesg | tail</span><br></pre></td></tr></table></figure>
 
-<p><strong>The screenshot of the results of executing sys_hello system call:</strong><br><img data-src="https://hackmd.io/_uploads/HJUIE4R7a.png" alt="image"></p>
+<p><strong>The screenshot of the results of executing sys_hello system call:</strong><br>       <div><br>                                            <img alt="張永義 競賽圖片" data-src="/hexo/images/OS_1/OS_2.jpg" /><br>                                        </div></p>
 <h3 id="sys-revstr"><a href="#sys-revstr" class="headerlink" title="sys_revstr"></a><code>sys_revstr</code></h3><p>For the implementation of the sys_hello system calls, I <font color="#f00">modified 4 kernel source files</font> and <font color="#f00">added 1 new C code</font> to verify if the system calls work correctly. The modified and added files are:</p>
 <ol>
 <li>linux-5.19.12&#x2F;kernel&#x2F;<font color="#f00">sys.c</font></li>
@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./sys_revstr</span><br></pre></td></tr></table></figure>
 <p><strong>Step 10: Display the output messages produced by the sys_ revstr system call.</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dmesg | tail</span><br></pre></td></tr></table></figure>
-<p><strong>The screenshot of the results of executing sys_ revstr system call:</strong><br><img data-src="https://hackmd.io/_uploads/ByrOVERma.png" alt="image"></p>
+<p><strong>The screenshot of the results of executing sys_ revstr system call:</strong><br>       <div><br>                                            <img alt="張永義 競賽圖片" data-src="/hexo/images/OS_1/OS_3.png" /><br>                                        </div></p>
 
     </div>
 
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 <script src="https://utteranc.es/client.js"
-        repo="https://github.com/Benedict-CS/hexo"
+        repo="https://github.com/Benedict-CS/hexo-en"
         issue-term="pathname"
         theme="github-dark"
         crossorigin="anonymous"
@@ -560,7 +560,7 @@ margin-left:-10px;
 
 
 
-<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Benedict-CS/hexo","issue_term":"title","theme":"github-light"}</script>
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Benedict-CS/hexo-en","issue_term":"title","theme":"github-light"}</script>
 <script src="/hexo/js/third-party/comments/utterances.js"></script>
 
 </body>

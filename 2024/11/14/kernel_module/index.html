@@ -32,17 +32,17 @@
 <meta property="og:site_name" content="Benedict">
 <meta property="og:description" content="Assignment 3: System Information Fetching Kernel Module Linux Kernel Module Descriptions Kernel Module: kfetch_mod Kfetch information mask Device operations   Requirements Default logo      In this a">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://hackmd.io/_uploads/HJjxVtOpT.png">
-<meta property="og:image" content="https://hackmd.io/_uploads/HJUzhTrRa.png">
-<meta property="og:image" content="https://hackmd.io/_uploads/SylbnTHCa.png">
-<meta property="og:image" content="https://hackmd.io/_uploads/B1zg36S0p.png">
+<meta property="og:image" content="https://benedict-cs.github.io/hexo/images/OS_3/OS_1.png">
+<meta property="og:image" content="https://benedict-cs.github.io/hexo/images/OS_3/OS_2.png">
+<meta property="og:image" content="https://benedict-cs.github.io/hexo/images/OS_3/OS_3.png">
+<meta property="og:image" content="https://benedict-cs.github.io/hexo/images/OS_3/OS_4.png">
 <meta property="article:published_time" content="2024-11-13T22:40:12.000Z">
-<meta property="article:modified_time" content="2024-07-02T14:45:05.695Z">
+<meta property="article:modified_time" content="2024-07-03T03:39:39.699Z">
 <meta property="article:author" content="Benedict">
 <meta property="article:tag" content="OS">
 <meta property="article:tag" content="Linux Kernel">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://hackmd.io/_uploads/HJjxVtOpT.png">
+<meta name="twitter:image" content="https://benedict-cs.github.io/hexo/images/OS_3/OS_1.png">
 
 
 <link rel="canonical" href="https://benedict-cs.github.io/hexo/2024/11/14/kernel_module/">
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const langSwitch = document.getElementById('switch-lang');
   if (langSwitch) {
     langSwitch.addEventListener('click', function () {
-      window.location.href = "https://benedict.nycu.me/en/index.html"; // Redirect to the new URL
+      window.location.href = "https://benedict-cs.github.io/hexo/"; // Redirect to the new URL
     });
   }
 });
@@ -322,7 +322,10 @@ document.addEventListener('DOMContentLoaded', function () {
 </li>
 </ul>
 <p>In this assignment, you are going to implement a kernel module that fetches the system information from the kernel, like below screenshot:</p>
-<p><img data-src="https://hackmd.io/_uploads/HJjxVtOpT.png" alt="image"></p>
+   <div>
+                                                    <img alt="張永義 競賽圖片" data-src="/hexo/images/OS_3/OS_1.png" />
+                                                </div>
+
 <h2 id="Implement-a-kernel-module-fetches-system-info-from-kernel"><a href="#Implement-a-kernel-module-fetches-system-info-from-kernel" class="headerlink" title="Implement a kernel module fetches system info from kernel"></a>Implement a kernel module fetches system info from kernel</h2><p><strong>Step 0: Create new program</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim kfetch_mod_312551002.c</span><br></pre></td></tr></table></figure>
 
@@ -342,12 +345,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <p><strong>Step 7: Test the program</strong></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./kfetch -h</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://hackmd.io/_uploads/HJUzhTrRa.png" alt="image"></p>
+   <div>
+                                                    <img alt="張永義 競賽圖片" data-src="/hexo/images/OS_3/OS_2.png" />
+                                                </div>
+
 <p><strong>Step 8: Test the program</strong><br>Initially, when the module is loaded, the first invocation without any options will display all the information. If the options -c and m are specified, only the information about the CPU model name and the memory will be displayed.</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./kfetch -a</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://hackmd.io/_uploads/SylbnTHCa.png" alt="image"></p>
+   <div>
+                                                    <img alt="張永義 競賽圖片" data-src="/hexo/images/OS_3/OS_3.png" />
+                                                </div>
+
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo ./kfetch -m -c</span><br></pre></td></tr></table></figure>
-<p><img data-src="https://hackmd.io/_uploads/B1zg36S0p.png" alt="image"></p>
+   <div>
+                                                    <img alt="張永義 競賽圖片" data-src="/hexo/images/OS_3/OS_4.png" />
+                                                </div>
 
     </div>
 
@@ -381,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 <script src="https://utteranc.es/client.js"
-        repo="https://github.com/Benedict-CS/hexo"
+        repo="https://github.com/Benedict-CS/hexo-en"
         issue-term="pathname"
         theme="github-dark"
         crossorigin="anonymous"
@@ -494,7 +505,7 @@ margin-left:-10px;
 
 
 
-<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Benedict-CS/hexo","issue_term":"title","theme":"github-light"}</script>
+<script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"Benedict-CS/hexo-en","issue_term":"title","theme":"github-light"}</script>
 <script src="/hexo/js/third-party/comments/utterances.js"></script>
 
 </body>
