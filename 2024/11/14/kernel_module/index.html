@@ -412,8 +412,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   <footer class="footer">
     <div class="footer-inner">
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 <div class="footer-container">
     <div class="copyright">
       &copy; 
@@ -423,25 +421,48 @@ document.addEventListener('DOMContentLoaded', function () {
       </span>
       <span class="pa"><span class="author" itemprop="copyrightHolder">Benedict</span></span>
     </div>
+
+   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span><br></span>	
+
+    
     <div class="busuanzi-count">
-        <span class="post-meta-item" id="busuanzi_container_site_uv">
           <span class="post-meta-item-icon">
             <i class="fa fa-user"></i>
           </span>
+          
+          
+          <span id="busuanzi_value_site_uv"></span>&nbsp;&nbsp;</span>
+
+
           <span class="site-uv" title="Total Visitors">
             <span id="busuanzi_value_site_uv"></span>
           </span>
-        </span>
-        <span class="post-meta-item" id="busuanzi_container_site_pv">
+
+| &nbsp;
+
           <span class="post-meta-item-icon">
             <i class="fa fa-eye"></i>
           </span>
+
+
+
+<span id="busuanzi_value_site_pv"></span>&nbsp;</span>
+
           <span class="site-pv" title="Total Views">
             <span id="busuanzi_value_site_pv"></span>
           </span>
-        </span>
     </div>
 </div>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (typeof busuanzi !== 'undefined') {
+      busuanzi.fetch();
+    }
+  });
+</script>
 
 <style>
 .footer-container {
@@ -451,15 +472,15 @@ document.addEventListener('DOMContentLoaded', function () {
 }
 
 .busuanzi-count {
-margin-left:20px;
+  margin-left: 20px;
 }
 
 .post-meta-item {
   display: flex;
   align-items: center;
 }
-.pa{
-margin-left:-10px;
+.pa {
+  margin-left: -10px;
 }
 </style>
 
