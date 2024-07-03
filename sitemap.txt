@@ -1,8 +1,8 @@
+https://benedict-cs.github.io/hexo-en/home/index.html
 https://benedict-cs.github.io/hexo-en/2024/11/14/kernel_module/
 https://benedict-cs.github.io/hexo-en/2024/11/13/linux_scheduling_policies/
 https://benedict-cs.github.io/hexo-en/2024/11/12/compile_linux_kernel/
 https://benedict-cs.github.io/hexo-en/about/index.html
-https://benedict-cs.github.io/hexo-en/home/index.html
 https://benedict-cs.github.io/hexo-en/tags/index.html
 https://benedict-cs.github.io/hexo-en/categories/index.html
 https://benedict-cs.github.io/hexo-en/lib/fancybox/README.html
